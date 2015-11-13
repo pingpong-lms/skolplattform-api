@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://pingpong.se/schemas/grade-documents/v0.13"
+	xmlns="http://pingpong.se/schemas/grade-documents/v0.13" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+	<xs:annotation>
+		<xs:documentation>
+			Händelser för utfärdande av utgångsdokument i PING
+			PONG. Genom stadens SOA-plattform
+			skickar systemet för
+			Elevdokumentation ut information om när betygsättningar sker.
+		</xs:documentation>
+	</xs:annotation>
+
+	<xs:element name="documents">
+		<xs:annotation>
+			<xs:documentation>
+				En lista av utfärdade utgångsdokument. Rotelementet
+				för dokumentet.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="document" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:simpleType name="DocumentType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="GR_SLUTBETYG" />
+			<xs:enumeration value="GY_SLUTBETYG" />
+			<xs:enumeration value="VUX_SLUTBETYG" />
+			<xs:enumeration value="GYSAR02_SLUTBETYG" />
+			<xs:enumeration value="GY_EXAMENSBEVIS_HOGSKOLEFORBEREDANDE" />
+			<xs:enumeration value="VUX_EXAMENSBEVIS_HOGSKOLEFORBEREDANDE" />
+			<xs:enumeration value="SFI_KUNSKAPSINTYG" />
+			<xs:enumeration value="VUX_KUNSKAPSINTYG" />
+			<xs:enumeration value="SFI_BETYG" />
+			<xs:enumeration value="GY_STUDIEBEVIS" />
+			<xs:enumeration value="GYSAR_STUDIEBEVIS_FOR_INDIVIDUELLT" />
+			<xs:enumeration value="GYSAR_STUDIEBEVIS_FOR_NATIONELLT" />
+			<xs:enumeration value="GY_GYMNASIEINTYG" />
+			<xs:enumeration value="GY_EXAMENSBEVIS_INGENJOR" />
+			<xs:enumeration value="GY_EXAMENSBEVIS_YRKESFORBEREDANDE" />
+			<xs:enumeration value="VUX_EXAMENSBEVIS_YRKESFORBEREDANDE" />
+		</xs:restriction>
+	</xs:simpleType>
+
+
+	<xs:element name="document">
+		<xs:annotation>
+			<xs:documentation><![CDATA[
+				Ett betygsdokument som ges ut när elever på olika sätt avslutat sina skolformer:
+				(1) person: Identifierare för den elev utgångsdokumentet utfärdats för.
+				(2) school: Identifierare för den skola som utfärdade utgångsdokumentet.
+				(3) schoolunitcode: Identifierar den skolenhet där utgångsdokumentet utfärdats.
+				(4) date: Den tidpunkt då utgångsdokumentet utfärdats.
+				(5) type: Typ av utgångsdokument, ett av:
+					- slutbetyg för grundskola (GR_SLUTBETYG): Utfärdas i grundskolan.
+					- slutbetyg för grundskola (GY_SLUTBETYG): Utfärdas i gymnasieskolan.
+					- slutbetyg för grundskola (VUX_SLUTBETYG): Utfärdas i kommunal vuxenutbildning.
+					- slutbetyg för gymnasiesärskolan, 2002 års läroplan (GYSAR02_SLUTBETYG): Utfärdas i gymnasiesärskolan.
+					- examensbevis - högskoleförberedande examen för gymnasieskola (GY_EXAMENSBEVIS_HOGSKOLEFORBEREDANDE): Utfärdas i gymnasieskolan.
+					- examensbevis - högskoleförberedande examen för gymnasieskola (VUX_EXAMENSBEVIS_HOGSKOLEFORBEREDANDE): Utfärdas i kommunal vuxenutbildning.
+					- kunskapsintyg för svenska för invandrare (SFI_KUNSKAPSINTYG): Utfärdas i svenska för invandrare.
+					- kunskapsintyg för kommunal vuxenutbildning (VUX_KUNSKAPSINTYG): Utfärdas i kommunal vuxenutbildning.
+					- betyg för sfi (SFI_BETYG): Utfärdas i svenska för invandrare.
+					- studiebevis för gymnasieskolan (GY_STUDIEBEVIS): Utfärdas i gymnasieskolan.
+					- gymnasiesärskolebevis för individuellt program för gymnasiesärskola, 2013 års läroplan (GYSAR_STUDIEBEVIS_FOR_INDIVIDUELLT): Utfärdas i gymnasiesärskolan.
+					- gymnasiesärskolebevis för nationellt program för gymnasiesärskola, 2013 års läroplan (GYSAR_STUDIEBEVIS_FOR_NATIONELLT): Utfärdas i gymnasiesärskolan.
+					- gymnasieintyg för gymnasieskola (GY_GYMNASIEINTYG): Utfärdas i gymnasieskolan.
+					- gymnasieingenjörsexamen för gymnasieskola (GY_EXAMENSBEVIS_INGENJOR): Utfärdas i gymnasieskolan.
+					- examensbevis - yrkesexamen för gymnasieskola (GY_EXAMENSBEVIS_YRKESFORBEREDANDE): Utfärdas i gymnasieskolan.
+					- examensbevis - yrkesexamen för gymnasieskola (VUX_EXAMENSBEVIS_YRKESFORBEREDANDE): Utfärdas i kommunal vuxenutbildning.
+				(6) basiccollegequalification: För "examensbevis - yrkesexamen", om examen ger grundläggande behörighet. Finns inte för andra dokument-typer.
+				(7) programcode: Studievägskoden som angivits på betygsdokumentet
+			]]></xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="personsourcedid" type="sourcedid" />
+				<xs:element name="schoolsourcedid" type="sourcedid">
+					<xs:annotation>
+						<xs:documentation>
+							Skolan som utfärdade dokumentet
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element ref="schoolunitcode" />
+				<xs:element name="subjects" type="subjects" />
+				<xs:element name="date" type="xs:date" />
+				<xs:element name="type" type="DocumentType"/>
+				<xs:element name="basiccollegequalification" type="xs:boolean"
+					minOccurs="0" />
+				<xs:element name="programcode" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="subjects">
+		<xs:annotation>
+			<xs:documentation>
+				De ämnes eller kurser som är associerade med
+				betygen som finns på dokumentet.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="subject" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="subject">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="subjectcode" type="xs:string" />
+				<xs:element name="language" minOccurs="0" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="sourcedid">
+		<xs:annotation>
+			<xs:documentation>
+				Identifierare för en person eller grupp (se
+				sourcedid i IMS).
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="source" type="xs:string" />
+			<xs:element name="id" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="schoolunitcode">
+		<xs:annotation>
+			<xs:documentation>
+				En skolenhet identifieras av en åttasiffrig
+				skolenhetskod enligt
+				http://www.scb.se/Statistik/UF/_dokument/Uppgiftslamnare/Skolregistret/Skolenhetskod-och-verksamhet.xls
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+				<xs:pattern value="[0-9]{8}" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+</xs:schema>
