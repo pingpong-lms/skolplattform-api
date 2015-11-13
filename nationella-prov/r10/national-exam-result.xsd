@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://pingpong.se/schemas/national-exam-result/v0.1"
+	xmlns="http://pingpong.se/schemas/national-exam-result/v0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+	<xs:annotation>
+		<xs:documentation>
+			Sammanvägt provbetyg för nationella prov i PING PONG.
+		</xs:documentation>
+	</xs:annotation>
+
+	<xs:element name="nationalexamresults">
+		<xs:annotation>
+			<xs:documentation>
+				En lista av sammanvägda provbetyg. Rotelementet för dokumentet.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nationalexamresult" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="nationalexamresult">
+		<xs:annotation>
+			<xs:documentation><![CDATA[
+				Ett sammanvägt provbetyg för nationella prov. 
+				personsourcedid + coursecode + semester/schoolyear identifierar 
+				tillsammans unikt ett sammanvägt provbetyg.
+				(1) personsourcedid: Identifierare för den elev provbetyget gäller.
+				(2) date: Den tidpunkt då sammanvägningen av provbetyget gjordes.
+				(3) coursecode: Den kurs eller det ämne som provet gäller.
+				(4) value: Det sammanvägda provbetyget, ett av:
+					- A
+					- B
+					- C
+					- D
+					- E
+					- F
+					- NOT_PARTICIPATED - om eleven inte deltagit i minst ett av delproven.
+					- RESULT_NOT_FOUND - om elevens minst ett av delprovsbetygen tappats bort.
+					- PREVIOUS_RESULT_REMOVED - om elevens tidigare sammanvägda provbetyg tagits bort.
+				(5) semester: Terminen som proven utfördes under (Gymnasial nivå).
+				(5) schoolyear: Skolåret som proven utfördes under (Grundskolenivå).
+			]]></xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="personsourcedid" type="sourcedid" />
+				<xs:element name="date" type="xs:date" />
+				<xs:element name="coursecode" type="xs:string" />
+				<xs:element name="value">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="A" />
+							<xs:enumeration value="B" />
+							<xs:enumeration value="C" />
+							<xs:enumeration value="D" />
+							<xs:enumeration value="E" />
+							<xs:enumeration value="F" />
+							<xs:enumeration value="NOT_PARTICIPATED" />
+							<xs:enumeration value="RESULT_NOT_FOUND" />
+							<xs:enumeration value="PREVIOUS_RESULT_REMOVED" />
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:choice>
+					<xs:element name="semester" type="xs:string" />
+					<xs:element name="schoolyear" type="xs:int" />
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="sourcedid">
+		<xs:annotation>
+			<xs:documentation>
+				Identifierare för en person eller grupp (se
+				sourcedid i IMS).
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="source" type="xs:string" />
+			<xs:element name="id" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>
