@@ -56,12 +56,12 @@ Händelse vid utfärdande av utgångsdokument
 XSD samt exempelfiler
 ---------------------
 Bifogat till detta dokument finns de två XSD-scheman som definierar informationen:
-- grades.xsd - schemat för händelser när betyg anges.
-- grade-documents.xsd - schemat för händelser vid utfärdande av utgångsdokument.
+- [grades.xsd](grades.xsd) - schemat för händelser när betyg anges.
+- [grade-documents.xsd](grade-documents.xsd) - schemat för händelser vid utfärdande av utgångsdokument.
 
 Bifogat till detta dokument finns även exempelfiler på händelsedata som skulle kunna skickas ut:
-- grades-sample.xml - exempelfil för för händelser när betyg anges.
-- grade-documents-sample.xml - exempelfil för händelser vid utfärdande av utgångsdokument.
+- [grades-sample.xml](grades-sample.xml) - exempelfil för för händelser när betyg anges.
+- [grade-documents-sample.xml](grade-documents-sample.xml) - exempelfil för händelser vid utfärdande av utgångsdokument.
 
 Ändringshistorik
 ----------------
