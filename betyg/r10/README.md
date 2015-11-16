@@ -21,7 +21,7 @@ Varje betygsuppgift innehåller följande information:
 - Värdet på betygsuppgiften, där tillåtna värden beror på skolform:
   - Grundskolan: A/B/C/D/E/F/-
   - Gymnasieskolan: A/B/C/D/E/F/- (förutom gymnasiearbetet som enbart tillåter E/F/-)
-  - Gymnasiesärskolan (nuvarande läroplan) A/B/C/D/E/\*\*\* (förutom gymnasiearbetet som enbart tillåter E/F/-)
+  - Gymnasiesärskolan (nuvarande läroplan) A/B/C/D/E/\*\*\*/- (förutom gymnasiearbetet som enbart tillåter E/\*\*\*/-)
   - Gymnasiesärskolan (föregående läroplan från 2002): VG/G/\*\*\*
   - Grundsärskolan: A/B/C/D/E/1
   - SFI: A/B/C/D/E/F/-
