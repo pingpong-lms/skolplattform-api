@@ -94,5 +94,5 @@ Nedan följer en beskrivning av de ändringar som gjorts till olika versioner av
 - 0.12 - La till 1 som betygsvärde för Grundsärskolan.
 - 0.13 - La till studievägskod.
 - 1.0:
-  - grades.xsd: Möjligheten att uttrycka betygsliknande omdömen för orienteringskurser i komvux och särvux.
+  - grades.xsd: Möjligheten att uttrycka betygsliknande omdömen för orienteringskurser i komvux och särvux. Korrigera dokumentation för att visa att terminer är av typen "HT 2015", inte "HT 8".
   - grade-documents.xsd: Dokumenttyperna använder nu tydligare svenska namn.
