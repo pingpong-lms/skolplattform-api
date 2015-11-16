@@ -26,6 +26,7 @@ Varje betygsuppgift innehåller följande information:
   - Grundsärskolan: A/B/C/D/E/1
   - SFI: A/B/C/D/E/F/-
   - Komvux och särvux: A/B/C/D/E/F/- (förutom betygsliknande omdömen som enbart tillåter G/IG)
+  - Yrkeshögskolan: VG/G/IG
 - Datum för beslut.
 - Information ifall betyget satts genom prövning.
 - Grupp-id för den kursgrupp eller ämnesgrupp betygsuppgiften beslutats inom. Finns inte för externa eller omvandlade betygsuppgifter.
