@@ -75,8 +75,7 @@
 	<xs:complexType name="sourcedid">
 		<xs:annotation>
 			<xs:documentation>
-				Identifierare för en person eller grupp (se
-				sourcedid i IMS).
+				Identifierare för en person eller grupp (se sourcedid i IMS).
 			</xs:documentation>
 		</xs:annotation>
 		<xs:sequence>
