@@ -212,7 +212,7 @@
 	<xs:element name="semester">
 		<xs:annotation>
 			<xs:documentation><![CDATA[
-				En termin som i "vårterminen i årskurs 8".
+				En termin som i "vårterminen 2015".
 			]]></xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
@@ -225,7 +225,7 @@
 						</xs:restriction>
 					</xs:simpleType>
 				</xs:element>
-				<xs:element name="year" type="xs:integer" />
+				<xs:element name="year" type="xs:positiveInteger" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
