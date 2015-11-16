@@ -1,12 +1,14 @@
 Betyg API, version 1.0
 ======================
 API:et skickar ut betygsrelaterad information vid två händelser i systemet:
+
 1. Vid ändrade betygsuppgifter.
 2. Vid utfärdande av vissa betygsrelaterade dokument.
 
 Information om ändrade betygsuppgifter
 --------------------------------------
 När en elevs betygsuppgifter ändras (genom att en betygsuppgift läggs till, uppdateras eller tas bort) skickas för denna elev en lista av fullständiga betygsuppgifter ut. En betygsuppgift är här antingen:
+
 1. Ett beslutat betyg.
 2. Ett betygsliknande omdöme för orienteringskurser i komvux eller särvux.
 
