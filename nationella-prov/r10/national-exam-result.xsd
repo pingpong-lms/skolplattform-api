@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema targetNamespace="http://pingpong.se/schemas/national-exam-result/v0.1"
-	xmlns="http://pingpong.se/schemas/national-exam-result/v0.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+<xs:schema targetNamespace="http://pingpong.se/schemas/national-exam-result/v1.0"
+	xmlns="http://pingpong.se/schemas/national-exam-result/v1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	elementFormDefault="qualified">
 	<xs:annotation>
 		<xs:documentation>
