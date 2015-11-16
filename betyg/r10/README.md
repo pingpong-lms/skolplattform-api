@@ -7,9 +7,9 @@ API:et skickar ut betygsrelaterad information vid två händelser i systemet:
 
 Information om ändrade betygsuppgifter
 --------------------------------------
-När en elevs betygsuppgifter ändras (genom att en betygsuppgift läggs till, uppdateras eller tas bort) skickas för denna elev en lista av fullständiga betygsuppgifter ut. En betygsuppgift är här antingen:
+När en elevs betygsuppgifter ändras (genom att en betygsuppgift läggs till, uppdateras eller tas bort) skickas för denna elev en lista av fullständiga betygsuppgifter ut. En betygsuppgift definieras här som antingen:
 
-1. Ett beslutat betyg.
+1. Ett beslutat betyg, eller
 2. Ett betygsliknande omdöme för orienteringskurser i komvux eller särvux.
 
 Vid en ändring av en eller flera betygsuppgifter skickas en lista av elevens fullständiga betygsuppgifter ut, vilket kan inkludera betygsuppgifter inte ändrade vid tillfället. Genom att listan är komplett kan konsumerande system implementera uppdateringar samt borttag genom att synkronisera in den fullständiga listan i sina system.
