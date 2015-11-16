@@ -46,12 +46,12 @@ Vid utfärdande av utgångsdokument skickas följande information ut:
 - GUID for den skola som utfärdar dokumentet.
 - Datum för utfärdande av dokumentet.
 - Typ av utgångsdokument:
-- slutbetyg för grundskola (COMPULSORY_SCHOOL_DIPLOMA): Utfärdas i grundskolan.
-- slutbetyg för grundskola (COMPULSORY_SCHOOL_DIPLOMA_GY): Utfärdas i gymnasieskolan.
-- slutbetyg för grundskola (COMPULSORY_SCHOOL_DIPLOMA_VUX): Utfärdas i kommunal vuxenutbildning. 
-- slutbetyg för gymnasiesärskolan 2002 (FINAL_GRADES_GYSAR02): Utfärdas i gymnasiesärskolan 2002.
-- examensbevis - högskoleförberedande examen för gymnasieskola (HIGHER_EDUCATION_PREPARATORY_DIPLOMA): Utfärdas i gymnasieskolan.
-- examensbevis - högskoleförberedande examen för gymnasieskola (HIGHER_EDUCATION_PREPARATORY_DIPLOMA_VUX): Utfärdas i kommunal vuxenutbildning.
+  - slutbetyg för grundskola (COMPULSORY_SCHOOL_DIPLOMA): Utfärdas i grundskolan.
+  - slutbetyg för grundskola (COMPULSORY_SCHOOL_DIPLOMA_GY): Utfärdas i gymnasieskolan.
+  - slutbetyg för grundskola (COMPULSORY_SCHOOL_DIPLOMA_VUX): Utfärdas i kommunal vuxenutbildning. 
+  - slutbetyg för gymnasiesärskolan 2002 (FINAL_GRADES_GYSAR02): Utfärdas i gymnasiesärskolan 2002.
+  - examensbevis - högskoleförberedande examen för gymnasieskola (HIGHER_EDUCATION_PREPARATORY_DIPLOMA): Utfärdas i gymnasieskolan.
+  - examensbevis - högskoleförberedande examen för gymnasieskola (HIGHER_EDUCATION_PREPARATORY_DIPLOMA_VUX): Utfärdas i kommunal vuxenutbildning.
   - kunskapsintyg för svenska för invandrare (KNOWLEDGE_CERTIFICATE_SFI): Utfärdas i svenska för invandrare.
   - kunskapsintyg för kommunal vuxenutbildning (KNOWLEDGE_CERTIFICATE_VUX): Utfärdas i kommunal vuxenutbildning.
   - betyg för sfi (SFI_DIPLOMA): Utfärdas i svenska för invandrare.
