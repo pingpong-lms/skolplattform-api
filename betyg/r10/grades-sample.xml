@@ -1,0 +1,130 @@
+<!DOCTYPE xml>
+<students xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                 xmlns="http://pingpong.se/schemas/grades/v1.0">
+    
+	<student>
+	    <sourcedid>
+	        <source>PING PONG</source>
+	        <id>d7b3374b-985a-4d43-9558-189e6643755a</id>
+	    </sourcedid>
+	    
+	    <!-- Gymnasieskurs: Reparation av motorcyklar och ATV -->
+	    <coursegrade>
+			<code>ATVREP0</code>
+			<value>A</value>
+			<date>2014-12-17</date>
+			<trial>false</trial>
+			<schoolgroup><sourcedid><source>PING PONG</source><id>bdcacf8c-0930-11e5-a6c0-1697f925ec7b</id></sourcedid></schoolgroup>
+			<gradingauthorities role="EXTERNAL"/>
+			<schoolform>GY</schoolform>
+			<remark>false</remark>
+	    </coursegrade>
+
+	    <!-- Gymnasieskurs: Moderna språk 2 -->
+		<coursegrade>
+			<code>MODDEU02</code>
+			<value>B</value>
+			<date>2014-12-19</date>
+			<trial>true</trial>
+			<gradegroup><sourcedid><source>PING PONG</source><id>d7b3374b-985a-4d43-9558-189e6643755a</id></sourcedid></gradegroup>
+			<schoolgroup><sourcedid><source>PING PONG</source><id>bdcacf8c-0930-11e5-a6c0-1697f925ec7b</id></sourcedid></schoolgroup>
+			<gradingauthorities role="TEACHER">
+				<gradingauthority><sourcedid><source>PING PONG</source><id>96ab211c-4937-49e3-8fdc-e144447c2138</id></sourcedid></gradingauthority>
+			</gradingauthorities>
+			<schoolform>GY</schoolform>
+			<remark>false</remark>
+		</coursegrade>
+	</student>
+
+
+	<student>
+	    <sourcedid>
+	        <source>PING PONG</source>
+	        <id>7b080db7-1591-4c67-94d6-28adfcf52396</id>
+	    </sourcedid>
+
+	   	<!-- Grundskoleämne: Modersmål, tyska (läst inom gymnasieskolan, så saknar termin) -->
+	    <subjectgrade>
+			<code>GRGRMOD01</code>
+			<value>E</value>
+			<date>2014-12-17</date>
+			<trial>false</trial>
+			<schoolgroup><sourcedid><source>PING PONG</source><id>bdcacf8c-0930-11e5-a6c0-1697f925ec7b</id></sourcedid></schoolgroup>
+			<gradingauthorities role="TEACHER">
+				<gradingauthority><sourcedid><source>PING PONG</source><id>96ab211c-4937-49e3-8fdc-e144447c2138</id></sourcedid></gradingauthority>
+			</gradingauthorities>
+			<schoolform>GR</schoolform>
+			<languagecode>DEU</languagecode>
+			<final>true</final>
+		</subjectgrade>
+
+		<!-- Gymnasiearbete i Barn- och fritidsprogrammet -->
+	    <coursegrade>
+			<code>GYARBF</code>
+			<value>E</value>
+			<date>2014-12-17</date>
+			<trial>false</trial>
+			<schoolgroup><sourcedid><source>PING PONG</source><id>bdcacf8c-0930-11e5-a6c0-1697f925ec7b</id></sourcedid></schoolgroup>
+			<gradingauthorities role="TEACHER">
+				<gradingauthority><sourcedid><source>PING PONG</source><id>96ab211c-4937-49e3-8fdc-e144447c2138</id></sourcedid></gradingauthority>
+			</gradingauthorities>
+			<schoolform>GR</schoolform>
+			<remark>false</remark>
+	    </coursegrade>
+	</student>
+
+	<student>
+	    <sourcedid>
+	        <source>PING PONG</source>
+	        <id>96ab211c-4937-49e3-8fdc-e144447c2138</id>
+	    </sourcedid>
+
+	    <!-- Grundskoleämne: Kemi -->
+	    <subjectgrade>
+			<code>GRGRKEM01</code>
+			<value>E</value>
+			<date>2014-12-17</date>
+			<trial>false</trial>
+			<schoolgroup><sourcedid><source>PING PONG</source><id>bdcacf8c-0930-11e5-a6c0-1697f925ec7b</id></sourcedid></schoolgroup>
+			<gradingauthorities role="EXTERNAL"/>
+			<schoolform>GR</schoolform>
+			<semester><type>HT</type><year>8</year></semester>
+			<final>true</final>
+	    </subjectgrade>
+
+	    <!-- Grundskoleämne: Modersmål, tyska, två betygsättande lärare -->
+	    <subjectgrade>
+			<code>GRGRMOD01</code>
+			<value>E</value>
+			<date>2014-12-17</date>
+			<trial>false</trial>
+			<schoolgroup><sourcedid><source>PING PONG</source><id>bdcacf8c-0930-11e5-a6c0-1697f925ec7b</id></sourcedid></schoolgroup>
+			<gradingauthorities role="TEACHER">
+				<gradingauthority><sourcedid><source>PING PONG</source><id>96ab211c-4937-49e3-8fdc-e144447c2138</id></sourcedid></gradingauthority>
+				<gradingauthority><sourcedid><source>PING PONG</source><id>96ab211c-4937-49e3-8fdc-e144447c2138</id></sourcedid></gradingauthority>
+			</gradingauthorities>
+			<schoolform>GR</schoolform>
+			<semester><type>VT</type><year>9</year></semester>
+			<languagecode>DEU</languagecode>
+			<final>true</final>
+		</subjectgrade>
+
+	    <!-- Grundskoleämne: Moderna språk (språkval), tyska, en betygsättande lärare -->
+	    <subjectgrade>
+			<code>GRGRMSP01</code>
+			<value>E</value>
+			<date>2014-12-17</date>
+			<trial>false</trial>
+			<schoolgroup><sourcedid><source>PING PONG</source><id>bdcacf8c-0930-11e5-a6c0-1697f925ec7b</id></sourcedid></schoolgroup>
+			<gradingauthorities role="HEADMASTER">
+				<gradingauthority><sourcedid><source>PING PONG</source><id>96ab211c-4937-49e3-8fdc-e144447c2138</id></sourcedid></gradingauthority>
+			</gradingauthorities>
+			<schoolform>GR</schoolform>
+			<semester><type>VT</type><year>9</year></semester>
+			<languagecode>DEU</languagecode>
+			<final>true</final>
+		</subjectgrade>
+	</student>
+
+</students>

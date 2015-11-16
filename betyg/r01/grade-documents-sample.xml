@@ -1,0 +1,105 @@
+<!DOCTYPE xml>
+<documents xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                 xmlns="http://pingpong.se/schemas/grade-documents/v0.13">
+
+    <!--  Ett slutbetyg har utfärdats inom skolenheten Södervikskolan (skolenhetskod=49021135) -->
+    <document>
+		<personsourcedid>
+		    <source>PING PONG</source>
+		    <id>78d4c490-708e-11e4-9803-0800200c9a66</id>
+		</personsourcedid>
+		<schoolsourcedid>
+		    <source>PING PONG</source>
+		    <id>78d4c490-708e-11e4-9803-0800200c9a67</id>
+		</schoolsourcedid>
+		<schoolunitcode>44412461</schoolunitcode>
+		<subjects>
+			<subject>
+				<subjectcode>ML</subjectcode>
+				<language>TIR</language>
+			</subject>
+			<subject>
+				<subjectcode>HKK</subjectcode>
+			</subject>
+		</subjects>
+		<date>2014-12-17</date>
+		<type>COMPULSORY_SCHOOL_DIPLOMA</type>
+	</document>
+
+	<!--  Ett annat slutbetyg har utfärdats inom skolenheten Södervikskolan (skolenhetskod=49021135) -->
+	<document>
+		<personsourcedid>
+		    <source>PING PONG</source>
+		    <id>78d4c490-708e-11e4-9803-0800200c9a66</id>
+		</personsourcedid>
+		<schoolsourcedid>
+		    <source>PING PONG</source>
+		    <id>78d4c490-708e-11e4-9803-0800200c9a68</id>
+		</schoolsourcedid>
+		<schoolunitcode>44412461</schoolunitcode>
+		<subjects>
+			<subject>
+				<subjectcode>ML</subjectcode>
+				<language>TIR</language>
+			</subject>
+			<subject>
+				<subjectcode>HKK</subjectcode>
+			</subject>
+		</subjects>
+		<date>2014-12-18</date>
+		<type>COMPULSORY_SCHOOL_DIPLOMA</type>
+	</document>
+
+	<!-- Ett examensbevis har utfärdats inom skolenheten Östra gymnasiet (skolenhetskod=99592025) -->
+	<document>
+		<personsourcedid>
+		    <source>PING PONG</source>
+		    <id>78d4c490-708e-11e4-9803-0800200c9a66</id>
+		</personsourcedid>
+		<schoolsourcedid>
+		    <source>PING PONG</source>
+		    <id>78d4c490-708e-11e4-9803-0800200c9a69</id>
+		</schoolsourcedid>
+		<schoolunitcode>99592025</schoolunitcode>
+		<subjects>
+			<subject>
+				<subjectcode>GYARES</subjectcode>
+			</subject>
+			<subject>
+				<subjectcode>MODFRE01</subjectcode>
+				<language>FRE</language>
+			</subject>
+		</subjects>
+		<date>2014-12-19</date>
+		<type>HIGHER_EDUCATION_PREPARATORY_DIPLOMA</type>
+		<programcode>NATNAT</programcode>
+	</document>
+
+		<!-- Ett yrkesförberedande examensbevis med grundläggande behörighet har utfärdats inom skolenheten Östra gymnasiet (skolenhetskod=99592025) -->
+	<document>
+		<personsourcedid>
+		    <source>PING PONG</source>
+		    <id>78d4c490-708e-11e4-9803-0800200c9a66</id>
+		</personsourcedid>
+		<schoolsourcedid>
+		    <source>PING PONG</source>
+		    <id>78d4c490-708e-11e4-9803-0800200c9a70</id>
+		</schoolsourcedid>
+		<schoolunitcode>99592025</schoolunitcode>
+		<subjects>
+			<subject>
+				<subjectcode>GYARES</subjectcode>
+			</subject>
+			<subject>
+				<subjectcode>MODFRE01</subjectcode>
+				<language>FRE</language>
+			</subject>
+		</subjects>
+		<date>2014-12-19</date>
+		<type>VOCATIONAL_DIPLOMA</type>
+		<basiccollegequalification>true</basiccollegequalification>
+		<programcode>NATNAT</programcode>
+	</document>
+
+</documents>

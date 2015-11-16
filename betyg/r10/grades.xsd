@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema targetNamespace="http://pingpong.se/schemas/grades/v1.0" xmlns="http://pingpong.se/schemas/grades/v1.0"
-	xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:schema targetNamespace="http://pingpong.se/schemas/grades/v1.0"
+           xmlns="http://pingpong.se/schemas/grades/v1.0"
+	   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	   elementFormDefault="qualified">
 	<xs:annotation>
 		<xs:documentation>
 			Betyg för elever i PING PONG. Varje gång en elevs betyg uppdateras skickas en students fullständiga
