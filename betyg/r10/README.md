@@ -1,33 +1,44 @@
 Betyg API, version 1.0
 ======================
-Systemet för elevdokumentation kommer att skicka ut betygsrelaterad information vid två händelser i systemet: Vid ändrade betygsuppgifter samt vid utfärdande av vissa betygsrelaterade dokument.
+API:et skickar ut betygsrelaterad information vid två händelser i systemet:
+1. Vid ändrade betygsuppgifter.
+2. Vid utfärdande av vissa betygsrelaterade dokument.
 
 Information om ändrade betygsuppgifter
 --------------------------------------
-När en elevs betygsuppgifter ändrats (genom att en betygsuppgift lagts till, uppdaterats eller tagits bort) skickas för denna elev en lista av fullständiga betygsuppgifter ut. En betygsuppgift är ett betyg samt betygsliknande omdömen
-När betyg markerats som redo för signering skickas följande information ut:
-- Identifierare för eleven som betyget berör.
-- Kurskod/ämneskod där betyget satts.
-- Värdet på betyget, där tillåtna värden beror på skolform:
+När en elevs betygsuppgifter ändras (genom att en betygsuppgift läggs till, uppdateras eller tas bort) skickas för denna elev en lista av fullständiga betygsuppgifter ut. En betygsuppgift är här antingen:
+1. Ett beslutat betyg.
+2. Ett betygsliknande omdöme för orienteringskurser i komvux eller särvux.
+
+Vid en ändring av en eller flera betygsuppgifter skickas en lista av elevens fullständiga betygsuppgifter ut, vilket kan inkludera betygsuppgifter inte ändrade vid tillfället. Genom att listan är komplett kan konsumerande system implementera uppdateringar samt borttag genom att synkronisera in den fullständiga listan i sina system.
+
+Varje betygsuppgift innehåller följande information:
+
+- Identifierare för eleven som betygsuppgiften berör.
+- Kurskod/ämneskod där betygsuppgiften satts.
+- Värdet på betygsuppgiften, där tillåtna värden beror på skolform:
   - Grundskolan: A/B/C/D/E/F/-
   - Gymnasieskolan: A/B/C/D/E/F/- (förutom gymnasiearbetet som enbart tillåter E/F/-)
-  - Gymnasiesärskolan (nuvarande läroplan) A/B/C/D/E/*** (förutom gymnasiearbetet som enbart tillåter E/F/-)
-  - Gymnasiesärskolan (föregående läroplan från 2002): VG/G/***
+  - Gymnasiesärskolan (nuvarande läroplan) A/B/C/D/E/\*\*\* (förutom gymnasiearbetet som enbart tillåter E/F/-)
+  - Gymnasiesärskolan (föregående läroplan från 2002): VG/G/\*\*\*
   - Grundsärskolan: A/B/C/D/E/1
   - SFI: A/B/C/D/E/F/-
-- Datum för betygsättning.
+  - Komvux och särvux: A/B/C/D/E/F/- (förutom betygsliknande omdömen som enbart tillåter G/IG)
+- Datum för beslut.
 - Information ifall betyget satts genom prövning.
-- Grupp-id för den kursgrupp eller ämnesgrupp betyget satts igenom. Finns inte för externa eller omvandlade betyg.
-- Grupp-id för den skolgrupp som betyget satts inom.
+- Grupp-id för den kursgrupp eller ämnesgrupp betygsuppgiften beslutats inom. Finns inte för externa eller omvandlade betygsuppgifter.
+- Grupp-id för den skolgrupp som betygsuppgiften beslutats inom.
 - Ifall grundskoleämne läst inom grundskolan: Termin (exempelvis “VT 8”).
 - Ifall Moderna språk eller Modersmål: Språkkod för det lästa språket.
 - Ifall Teckenspråk för hörande eller Moderna språk: Om ämnet är läst inom Elevens val eller Språkval.
-- Identifierare för de personer som beslutat om betyget (finns inte för externt inlagda betyg).
-- Skolform för skolenheten som utfärdat betyget
+- Identifierare för de personer som beslutat om betygsuppgiften (finns inte för externt inlagda betyg).
+- Skolform för skolenheten som utfärdat betygsuppgiften.
+- En flagga som berättar ifall betygsuppgiften är ett betyg eller ett betygsliknande omdöme.
 
 Händelse vid utfärdande av utgångsdokument
 ------------------------------------------
-- Vid utfärdande av utgångsdokument skickas följande information ut:
+Vid utfärdande av utgångsdokument skickas följande information ut:
+
 - Identifierare för den elev dokumentet har utfärdats för.
 - Skolenhetskod för skolenheten där dokumentet utfärdats.
 - GUID for den skola som utfärdar dokumentet.
@@ -81,4 +92,4 @@ Nedan följer en beskrivning av de ändringar som gjorts till olika versioner av
 - 0.13 - La till studievägskod.
 - 1.0:
   - grades.xsd: Möjligheten att uttrycka betygsliknande omdömen för orienteringskurser i komvux och särvux.
-  - grade-documents.xsd har uppdaterats till att använda tydligare svenska namn för dokumenttyperna.
+  - grade-documents.xsd: Dokumenttyperna använder nu tydligare svenska namn.
