@@ -12,4 +12,4 @@ for betygapiversion in r01 r10; do
 	validate_xml betyg/$betygapiversion/grade-documents.xsd betyg/$betygapiversion/grade-documents-sample.xml
 done
 
-validate_xml dokument/r10/documents.xsd dokument/r10/documents-sample.xml
+validate_xml styrdokument/r10/styrdokument.xsd styrdokument/r10/styrdokument-sample.xml
