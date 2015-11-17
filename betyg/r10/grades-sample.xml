@@ -89,7 +89,7 @@
 			<schoolgroup><sourcedid><source>PING PONG</source><id>bdcacf8c-0930-11e5-a6c0-1697f925ec7b</id></sourcedid></schoolgroup>
 			<gradingauthorities role="EXTERNAL"/>
 			<schoolform>GR</schoolform>
-			<semester><type>HT</type><year>8</year></semester>
+			<semester><type>HT</type><year>2014</year></semester>
 			<final>true</final>
 	    </subjectgrade>
 
@@ -97,7 +97,7 @@
 	    <subjectgrade>
 			<code>GRGRMOD01</code>
 			<value>E</value>
-			<date>2014-12-17</date>
+			<date>2015-05-17</date>
 			<trial>false</trial>
 			<schoolgroup><sourcedid><source>PING PONG</source><id>bdcacf8c-0930-11e5-a6c0-1697f925ec7b</id></sourcedid></schoolgroup>
 			<gradingauthorities role="TEACHER">
@@ -105,7 +105,7 @@
 				<gradingauthority><sourcedid><source>PING PONG</source><id>96ab211c-4937-49e3-8fdc-e144447c2138</id></sourcedid></gradingauthority>
 			</gradingauthorities>
 			<schoolform>GR</schoolform>
-			<semester><type>VT</type><year>9</year></semester>
+			<semester><type>VT</type><year>2015</year></semester>
 			<languagecode>DEU</languagecode>
 			<final>true</final>
 		</subjectgrade>
@@ -121,7 +121,7 @@
 				<gradingauthority><sourcedid><source>PING PONG</source><id>96ab211c-4937-49e3-8fdc-e144447c2138</id></sourcedid></gradingauthority>
 			</gradingauthorities>
 			<schoolform>GR</schoolform>
-			<semester><type>VT</type><year>9</year></semester>
+			<semester><type>HT</type><year>2015</year></semester>
 			<languagecode>DEU</languagecode>
 			<final>true</final>
 		</subjectgrade>
