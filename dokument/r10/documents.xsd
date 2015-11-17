@@ -32,8 +32,8 @@
 			<xs:sequence>
 				<xs:element name="actionprogram" minOccurs="0" />
 				<xs:element name="individualdevelopmentplan" minOccurs="0" />
-				<xs:attribute name="id" type="xs:string" use="required" />
 			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" use="required" />
 		</xs:complexType>
 	</xs:element>
 

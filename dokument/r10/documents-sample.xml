@@ -1,0 +1,21 @@
+<!DOCTYPE xml>
+<persons xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                 xmlns="http://pingpong.se/schemas/documents/v1.0">
+    
+	<person id="{d7b3374b-985a-4d43-9558-189e6643755a}">
+		<individualdevelopmentplan />
+	</person>	
+
+	<person id="{j1b4234k-123d-7f65-3432-923e2352452a}" />
+
+	<person id="{d7b5234b-985a-4d43-9558-189e6643755a}">
+                <actionprogram />
+        </person>
+
+	<person id="{d7s3374b-985a-4d43-9558-189e6643755a}">
+                <actionprogram />
+		<individualdevelopmentplan />
+        </person>
+
+</persons>
