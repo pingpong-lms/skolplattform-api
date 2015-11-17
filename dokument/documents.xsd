@@ -33,7 +33,6 @@
 				<xs:element name="actionprogram" minOccurs="0" />
 				<xs:element name="individualdevelopmentplan" minOccurs="0" />
 				<xs:attribute name="id" type="xs:string" use="required" />
-				<xs:attribute name="code" type="xs:string" use="required" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
