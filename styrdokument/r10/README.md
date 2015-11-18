@@ -4,20 +4,20 @@ När information om styrdokument efterfrågas skickas all information för de in
 
 Information om styrdokument
 ---------------------------
-För varje person visas följande information:
+För varje person erhålls följande information:
 
-- Identifierare för eleven
+- Identifierare för eleven.
 - Aktuella styrdokument:
   - actionprogram: Elementets närvaro indikerar att aktuellt åtgärdsprogram finns för personen.
   - individualdevelopmentplan: Elementets närvaro indikerar att aktuellt individuell utvecklingsplan finns för personen.
 
-XSD samt exempelfiler
----------------------
+XSD samt exempelfil
+-------------------
 Bifogat till detta dokument finns ett XSD-schema som definierar informationen:
 - [styrdokument.xsd](styrdokument.xsd) - schemat för hur information om styrdokument kommuniceras.
 
 Bifogat till detta dokument finns även en exempelfil på händelsedata som skulle kunna skickas ut:
-- [styrdokument-sample.xml](styrdokument-sample.xml) - exempelfil för hur information om styrdokument kommuniceras.
+- [styrdokument-exempel.xml](styrdokument-exempel.xml) - exempelfil för hur information om styrdokument kommuniceras.
 
 Ändringshistorik
 ----------------

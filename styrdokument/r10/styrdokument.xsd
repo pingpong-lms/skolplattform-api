@@ -4,34 +4,28 @@
 	   xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	   elementFormDefault="qualified">
 	<xs:annotation>
-		<xs:documentation>
-			Styrdokument för elever i PING PONG.
-		</xs:documentation>
+		<xs:documentation>Styrdokument för elever i PING PONG.</xs:documentation>
 	</xs:annotation>
 
-	<xs:element name="persons">
+	<xs:element name="styrdokument">
 		<xs:annotation>
-			<xs:documentation>
-				Lista av personer. Rotelementet för dokumentet.
-			</xs:documentation>
+			<xs:documentation>Lista av elever med deras styrdokument. Rotelement för dokumentet.</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="person" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="elev" minOccurs="0" maxOccurs="unbounded" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
 
-	<xs:element name="person">
+	<xs:element name="elev">
 		<xs:annotation>
-			<xs:documentation>
-				Sammanställning av en persons aktuella styrdokument.
-			</xs:documentation>
+			<xs:documentation>Sammanställning av en persons aktuella styrdokument.</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="actionprogram" minOccurs="0" />
-				<xs:element name="individualdevelopmentplan" minOccurs="0" />
+				<xs:element name="åtgärdsprogram" minOccurs="0" />
+				<xs:element name="iup" minOccurs="0" />
 			</xs:sequence>
 			<xs:attribute name="id" type="xs:string" use="required" />
 		</xs:complexType>
