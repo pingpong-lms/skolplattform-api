@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://pingpong.se/schemas/nationellaprov/v1.0"
+	   xmlns="http://pingpong.se/schemas/nationellaprov/v1.0"
+	   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	   elementFormDefault="qualified">
+	<xs:annotation>
+		<xs:documentation>Sammanvägt provbetyg för nationella prov i PING PONG.</xs:documentation>
+	</xs:annotation>
+
+
+	<xs:element name="provresultat">
+		<xs:annotation><xs:documentation>Lista av ämnesresultat och provresultat. Rotelement för dokumentet.</xs:documentation></xs:annotation>
+		<xs:complexType><xs:sequence>
+			<xs:element ref="ämnesresultat" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="kursresultat" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence></xs:complexType>
+	</xs:element>
+
+	<xs:element name="ämnesresultat">
+		<xs:annotation><xs:documentation>Sammanställning av en persons aktuella provresultat.</xs:documentation></xs:annotation>
+		<xs:complexType>
+			<xs:sequence><xs:element name="sammanvägtprovbetyg" maxOccurs="unbounded"/></xs:sequence>
+			<xs:attribute name="elev" type="xs:string" use="required"/>
+			<xs:attribute name="ämne" type="xs:string" use="required"/>
+			<xs:attribute name="årskurs" use="required">
+				<xs:simpleType>
+    					<xs:restriction base="xs:positiveInteger">
+						<xs:enumeration value="3"/>
+						<xs:enumeration value="6"/>
+						<xs:enumeration value="9"/>
+    					</xs:restriction>
+  				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="kursresultat">
+		<xs:annotation><xs:documentation>Sammanställning av en persons aktuella provresultat.</xs:documentation></xs:annotation>
+		<xs:complexType>
+			<xs:sequence><xs:element name="sammanvägtprovbetyg"/></xs:sequence>
+			<xs:attribute name="elev" type="xs:string" use="required"/>
+			<xs:attribute name="kurs" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="sammanvägtprovbetyg">
+		<xs:annotation>
+			<xs:documentation><![CDATA[
+				Ett sammanvägt provbetyg för nationella prov. 
+				- betyg: Värdet på betyget.
+				- inmatat: Det datum då betyget matades in i systemet.
+			]]></xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="inmatat" type="xs:date"/>
+				<xs:element name="betyg">
+					<xs:simpleType><xs:restriction base="xs:string">
+						<xs:enumeration value="A"/>
+						<xs:enumeration value="B"/>
+						<xs:enumeration value="C"/>
+						<xs:enumeration value="D"/>
+						<xs:enumeration value="E"/>
+						<xs:enumeration value="F"/>
+						<xs:enumeration value="NOT_PARTICIPATED"/>
+						<xs:enumeration value="RESULT_NOT_FOUND"/>
+						<xs:enumeration value="PREVIOUS_RESULT_REMOVED"/>
+					</xs:restriction></xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

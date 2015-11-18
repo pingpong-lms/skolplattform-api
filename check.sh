@@ -13,3 +13,5 @@ for betygapiversion in r01 r10; do
 done
 
 validate_xml styrdokument/r10/styrdokument.xsd styrdokument/r10/styrdokument-sample.xml
+
+validate_xml nationellaprov/r10/nationellaprov.xsd nationellaprov/r10/nationellaprov-exempel.xml
