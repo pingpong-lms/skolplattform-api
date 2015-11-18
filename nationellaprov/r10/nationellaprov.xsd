@@ -40,25 +40,18 @@
 	</xs:element>
 
 	<xs:element name="kursresultat">
-		<xs:annotation><xs:documentation>Sammanställning av en persons aktuella provresultat.</xs:documentation></xs:annotation>
+		<xs:annotation><xs:documentation>Sammanställning av en persons aktuella sammanvägda provresultat.</xs:documentation></xs:annotation>
 		<xs:complexType>
 			<xs:sequence><xs:element name="sammanvägtprovbetyg"/></xs:sequence>
-			<xs:attribute name="elev" type="xs:string" use="required"/>
-			<xs:attribute name="kurs" type="xs:string" use="required"/>
+			<xs:attribute name="elev" type="xs:string" use="required"><xs:annotation><xs:documentation>Identifierare för den elev vars sammanvägda provresultat erhålls (sourcedid/id i IMS).</xs:documentation></xs:annotation></xs:attribute>
+			<xs:attribute name="kurs" type="xs:string" use="required"><xs:annotation><xs:documentation>Kurskod för kursen vars sammanvägda provresultat erhålls.</xs:documentation></xs:annotation></xs:attribute>
 		</xs:complexType>
 	</xs:element>
 
 	<xs:element name="sammanvägtprovbetyg">
-		<xs:annotation>
-			<xs:documentation><![CDATA[
-				Ett sammanvägt provbetyg för nationella prov. 
-				- betyg: Värdet på betyget.
-				- inmatat: Det datum då betyget matades in i systemet.
-			]]></xs:documentation>
-		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="inmatat" type="xs:date"/>
+				<xs:element name="inmatat" type="xs:date"><xs:annotation><xs:documentation>Det datum då betyget matades in i betyget.</xs:documentation></xs:annotation></xs:element>
 				<xs:element name="betyg">
 					<xs:simpleType><xs:restriction base="xs:string">
 						<xs:enumeration value="A"/>

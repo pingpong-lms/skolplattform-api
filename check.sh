@@ -7,10 +7,11 @@ validate_xml () {
 	xmllint --noout --schema $1 $2
 }
 
-for betygapiversion in r01 r10; do
-	validate_xml betyg/$betygapiversion/grades.xsd betyg/$betygapiversion/grades-sample.xml
-	validate_xml betyg/$betygapiversion/grade-documents.xsd betyg/$betygapiversion/grade-documents-sample.xml
-done
+validate_xml betyg/r01/grades.xsd betyg/r01/grades-sample.xml
+validate_xml betyg/r01/grade-documents.xsd betyg/r01/grade-documents-sample.xml
+validate_xml betyg/r10/betyg.xsd betyg/r10/betyg-exempel.xml
+
+validate_xml betygsdokument/r10/betygsdokument.xsd betygsdokument/r10/betygsdokument-exempel.xml
 
 validate_xml styrdokument/r10/styrdokument.xsd styrdokument/r10/styrdokument-exempel.xml
 

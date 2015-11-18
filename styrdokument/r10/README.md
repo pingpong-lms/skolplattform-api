@@ -15,7 +15,7 @@ För varje elev erhålls följande information:
 
 XSD samt exempelfil
 -------------------
-Bifogat till detta dokument finns ett XSD-schema som definierar informationen:
+Bifogat till detta dokument finns det XSD-schema som definierar informationen:
 - [styrdokument.xsd](styrdokument.xsd)
 
 Bifogat till detta dokument finns även en exempelfil på händelsedata som skulle kunna skickas ut:

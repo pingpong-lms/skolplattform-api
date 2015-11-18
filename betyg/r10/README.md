@@ -38,44 +38,13 @@ Varje betygsuppgift innehåller följande information:
 - Skolform för skolenheten som utfärdat betygsuppgiften.
 - En flagga som berättar ifall betygsuppgiften är ett betyg eller ett betygsliknande omdöme.
 
-Händelse vid utfärdande av utgångsdokument
-------------------------------------------
-Vid utfärdande av utgångsdokument skickas följande information ut:
-
-- Identifierare för den elev dokumentet har utfärdats för.
-- Skolenhetskod för skolenheten där dokumentet utfärdats.
-- GUID for den skola som utfärdar dokumentet.
-- Datum för utfärdande av dokumentet.
-- Typ av utgångsdokument:
-  - slutbetyg för grundskola (COMPULSORY_SCHOOL_DIPLOMA): Utfärdas i grundskolan.
-  - slutbetyg för grundskola (COMPULSORY_SCHOOL_DIPLOMA_GY): Utfärdas i gymnasieskolan.
-  - slutbetyg för grundskola (COMPULSORY_SCHOOL_DIPLOMA_VUX): Utfärdas i kommunal vuxenutbildning. 
-  - slutbetyg för gymnasiesärskolan 2002 (FINAL_GRADES_GYSAR02): Utfärdas i gymnasiesärskolan 2002.
-  - examensbevis - högskoleförberedande examen för gymnasieskola (HIGHER_EDUCATION_PREPARATORY_DIPLOMA): Utfärdas i gymnasieskolan.
-  - examensbevis - högskoleförberedande examen för gymnasieskola (HIGHER_EDUCATION_PREPARATORY_DIPLOMA_VUX): Utfärdas i kommunal vuxenutbildning.
-  - kunskapsintyg för svenska för invandrare (KNOWLEDGE_CERTIFICATE_SFI): Utfärdas i svenska för invandrare.
-  - kunskapsintyg för kommunal vuxenutbildning (KNOWLEDGE_CERTIFICATE_VUX): Utfärdas i kommunal vuxenutbildning.
-  - betyg för sfi (SFI_DIPLOMA): Utfärdas i svenska för invandrare.
-  - studiebevis för gymnasieskolan (STUDY_CERTIFICATE): Utfärdas i gymnasieskolan.
-  - gymnasiesärskolebevis för individuellt program för gymnasiesärskola 2013 (STUDY_CERTIFICATE_GYSAR_INDIVIDUAL): Utfärdas i gymnasiesärskolan 2013.
-  - gymnasiesärskolebevis för nationellt program för gymnasiesärskola 2013 (STUDY_CERTIFICATE_GYSAR_NATIONAL): Utfärdas i gymnasiesärskolan 2013.
-  - gymnasieintyg för gymnasieskola (UPPER_SECONDARY_CERTIFICATE): Utfärdas i gymnasieskolan.
-  - gymnasieingenjörsexamen för gymnasieskola (UPPER_SECONDARY_ENGINEER_DIPLOMA): Utfärdas i gymnasieskolan.
-  - examensbevis - yrkesexamen för gymnasieskola (VOCATIONAL_DIPLOMA): Utfärdas i gymnasieskolan.
-  - examensbevis - yrkesexamen för gymnasieskola (VOCATIONAL_DIPLOMA_VUX): Utfärdas i kommunal vuxenutbildning.
-- Ifall examensbevis - yrkesexamen: Om grundläggande behörighet har uppnåtts.
-- Ifall studievägskod finns för dokumentet: Den utskrivna studievägskoden.
-- En lista på alla de kurser alt. ämnen som är kopplade till betyg som finns på dokumentet
-
-XSD samt exempelfiler
+XSD samt exempelfi
 ---------------------
-Bifogat till detta dokument finns de två XSD-scheman som definierar informationen:
-- [grades.xsd](grades.xsd) - schemat för händelser när betyg anges.
-- [grade-documents.xsd](grade-documents.xsd) - schemat för händelser vid utfärdande av utgångsdokument.
+Bifogat till detta dokument finns det XSD-schema som definierar informationen:
+- [betyg.xsd](betyg.xsd)
 
-Bifogat till detta dokument finns även exempelfiler på händelsedata som skulle kunna skickas ut:
-- [grades-sample.xml](grades-sample.xml) - exempelfil för för händelser när betyg anges.
-- [grade-documents-sample.xml](grade-documents-sample.xml) - exempelfil för händelser vid utfärdande av utgångsdokument.
+Bifogat till detta dokument finns även en exempelfil på händelsedata som skulle kunna skickas ut:
+- [betyg-exempel.xml](betyg-exempel.xml)
 
 Ändringshistorik
 ----------------
@@ -93,6 +62,8 @@ Nedan följer en beskrivning av de ändringar som gjorts till olika versioner av
 - 0.11 - Tidigare skickades bara betygsättande lärare med. Nu skickas även rektor med som beslutande person. grade-documents.xsd behålls på versionsnummer 0.10.
 - 0.12 - La till 1 som betygsvärde för Grundsärskolan.
 - 0.13 - La till studievägskod.
-- 1.0:
-  - grades.xsd: Tillägg av betygsliknande omdömen för orienteringskurser i komvux och särvux. Korrigera dokumentation för att visa att terminer är av typen "HT 2015", inte "HT 8".
-  - grade-documents.xsd: Dokumenttyperna använder nu tydligare svenska namn.
+- 1.0 - Ett flertal ändringar:
+	- Information om utfärdade dokument har brytits ut till ett eget API.
+	- Övergång till svenska genomgående.
+	- Tillägg av betygsliknande omdömen för orienteringskurser i komvux och särvux.
+	- Korrigera dokumentation för att visa att terminer är av typen "HT 2015", inte "HT 8".

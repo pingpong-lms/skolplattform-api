@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://pingpong.se/schemas/grades/v1.0"
+           xmlns="http://pingpong.se/schemas/grades/v1.0"
+	   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	   elementFormDefault="qualified">
+	<xs:annotation>
+		<xs:documentation>
+			Betyg för elever i PING PONG. Varje gång en elevs betyg uppdateras skickas en students fullständiga
+			betyg i systemet ut. Detta för att hantera att betyg kan korrigeras eller tas bort efter utfärdande.
+
+			Den URL dit informationen skickas ställs in av en systemadministratör.
+		</xs:documentation>
+	</xs:annotation>
+
+	<xs:element name="betyg">
+		<xs:annotation><xs:documentation>Lista av elever med deras betyg. Rotelement för dokumentet.</xs:documentation></xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="elev" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="elev">
+		<xs:annotation><xs:documentation>
+				En elevs alla betyg i systemet oavsett skolform.
+				Observera att det är en komplett uppsättning av en elevs betyg - ifall ett tidigare skickat betyg
+				inte finns i ett senare anrop betyder det att betyget tagits bort.
+		</xs:documentation></xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ämnesbetyg" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="kursbetyg" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" use="required"><xs:annotation><xs:documentation>Identifierare för den elev vars betyg listas (sourcedid/id i IMS).</xs:documentation></xs:annotation></xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="sourcedid">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="source" type="xs:string" />
+				<xs:element name="id" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="group">
+		<xs:sequence>
+			<xs:element ref="sourcedid" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="betyg" abstract="true">
+		<xs:annotation><xs:documentation>Data gemensamt för alla typer av betygsättningar inom olika skolformer.</xs:documentation></xs:annotation>
+		<xs:sequence>
+			<xs:element name="value">
+				<xs:annotation><xs:documentation>Värdet på betyget.</xs:documentation></xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="A" />
+						<xs:enumeration value="B" />
+						<xs:enumeration value="C" />
+						<xs:enumeration value="D" />
+						<xs:enumeration value="E" />
+						<xs:enumeration value="F" />
+						<xs:enumeration value="-" />
+						<xs:enumeration value="***" />
+						<xs:enumeration value="VG" />
+						<xs:enumeration value="G" />
+						<xs:enumeration value="IG" />
+						<xs:enumeration value="1" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="datum" type="xs:date"><xs:annotation><xs:documentation>Datumet då betyget sattes.</xs:documentation></xs:annotation></xs:element>
+			<xs:element name="prövning" type="xs:boolean"><xs:annotation><xs:documentation>Om betyget erhållts genom prövning.</xs:documentation></xs:annotation></xs:element>
+			<xs:element name="betygsgrupp" type="xs:string" minOccurs="0" maxOccurs="1"><xs:annotation><xs:documentation>Den kursgrupp eller ämnesgrupp betyget satts inom.</xs:documentation></xs:annotation></xs:element>
+			<xs:element name="skola" type="xs:string"><xs:annotation><xs:documentation>Id för den skola vilken betyget satts inom (sourcedid/id från IMS).</xs:documentation></xs:annotation></xs:element>
+			<xs:element ref="beslutsfattare" />
+			<xs:element name="skolform">
+				<xs:annotation><xs:documentation>Den skolform betyget beslutats inom.</xs:documentation></xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="GR" />
+						<xs:enumeration value="GRSAR" />
+						<xs:enumeration value="GY" />
+						<xs:enumeration value="GYSAR" />
+						<xs:enumeration value="SAME" />
+						<xs:enumeration value="SFI" />
+						<xs:enumeration value="SPEC" />
+						<xs:enumeration value="SARVUX" />
+						<xs:enumeration value="VUX" />
+						<xs:enumeration value="YH" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="beslutsfattare">
+		<xs:annotation><xs:documentation>Den eller de personer som beslutat om betyget.</xs:documentation></xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="person" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+			</xs:sequence>
+			<xs:attribute name="roll" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="LÄRARE"><xs:annotation><xs:documentation>En eller flerare lärare som beslutat om betyget.</xs:documentation></xs:annotation></xs:enumeration>
+						<xs:enumeration value="REKTOR"><xs:annotation><xs:documentation>En rektor som beslutat om betyget.</xs:documentation></xs:annotation></xs:enumeration>
+						<xs:enumeration value="EXTERN"><xs:annotation><xs:documentation>Betyget är beslutat av en extern skolenhet. Informationen om vilka personer som har beslutat om betyget behöver då ej finnas</xs:documentation></xs:annotation></xs:enumeration>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="ämnesbetyg">
+		<xs:annotation><xs:documentation>Betyg för ämnen inom grundskoleutbildning.</xs:documentation></xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="betyg">
+					<xs:sequence>
+						<xs:element name="ämnesförkortning" type="xs:string"><xs:annotation><xs:documentation>Förkortningen för det ämne betyget är för.</xs:documentation></xs:annotation></xs:element>
+						<xs:element name="språk" minOccurs="0" type="xs:string"><xs:annotation><xs:documentation>Vilket språk som har lästs inom ämnet. Endast relevant för Moderna språk samt Modersmål.</xs:documentation></xs:annotation></xs:element>
+						<xs:element name="termin" minOccurs="0">
+							<xs:annotation><xs:documentation>Terminen när betyget sattes. Finns endast om ämnet läses inom grundskoleutbildning - inte om det t.ex. är ett grundskoleämne som läses inom gymnasieskolan.</xs:documentation></xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="typ">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="VT" />
+												<xs:enumeration value="HT" />
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:element>
+									<xs:element name="år" type="xs:positiveInteger" />
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="slutbetyg" type="xs:boolean"><xs:annotation><xs:documentation>Om betyget är ett slutbetyg. Alltid sant för skolformet som ej har terminsbetyg.</xs:documentation></xs:annotation></xs:element>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="kursbetyg">
+		<xs:annotation><xs:documentation>
+			En betygsättning inom gymnasieutbildning eller vuxenutbilning.
+		</xs:documentation></xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="betyg">
+					<xs:sequence>
+						<xs:element name="kurskod" type="xs:string"><xs:annotation><xs:documentation>Kurskoden för den kurs betyget är för.</xs:documentation></xs:annotation></xs:element>
+						<xs:element name="omdöme" type="xs:boolean"><xs:annotation><xs:documentation>Ifall betygsuppgiften är ett betygsliknande omdöme.</xs:documentation></xs:annotation></xs:element>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>
