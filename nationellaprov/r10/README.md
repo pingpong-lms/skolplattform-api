@@ -10,3 +10,6 @@ Med _provområde_ avses hädanefter antingen kombinationen av ett ämne och års
 Vanligast är att en elev erhåller endast ett nationellt provresultat inom ett provområde, men kan under vissa omständigheter erhålla flera.
 
 För att stödja detta skickar systemet ut en lista av alla sammanvägda provbetyg inom ett provområde när ett provbetyg blivit tillagt, uppdaterat eller borttaget.
+
+- [Schema](nationellaprov.xsd)
+- [Exempel](nationellaprov-exempel.xml)
