@@ -125,7 +125,7 @@
 						<xs:element name="ämnesförkortning" type="xs:string"><xs:annotation><xs:documentation>Förkortningen för det ämne betyget är för.</xs:documentation></xs:annotation></xs:element>
 						<xs:element name="språk" minOccurs="0" type="xs:string"><xs:annotation><xs:documentation>Vilket språk som har lästs inom ämnet. Endast relevant för Moderna språk samt Modersmål.</xs:documentation></xs:annotation></xs:element>
 						<xs:element name="termin" minOccurs="0">
-							<xs:annotation><xs:documentation>Terminen när betyget sattes. Finns endast om ämnet läses inom grundskoleutbildning - inte om det t.ex. är ett grundskoleämne som läses inom gymnasieskolan.</xs:documentation></xs:annotation>
+							<xs:annotation><xs:documentation>Terminen när betyget sattes, exempelvis "HT 2015". Finns endast om ämnet läses inom grundskoleutbildning - inte om det t.ex. är ett grundskoleämne som läses inom gymnasieskolan.</xs:documentation></xs:annotation>
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="typ">
