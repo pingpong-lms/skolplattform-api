@@ -67,8 +67,12 @@
 						<xs:enumeration value="D"/>
 						<xs:enumeration value="E"/>
 						<xs:enumeration value="F"/>
-						<xs:enumeration value="NOT_PARTICIPATED"/>
-						<xs:enumeration value="RESULT_NOT_FOUND"/>
+						<xs:enumeration value="INTE_DELTAGIT">
+							<xs:annotation><xs:documentation>Eleven borde genomfört provet men avvek.</xs:documentation></xs:annotation>
+						</xs:enumeration>
+						<xs:enumeration value="BORTTAPPAT_RESULTAT">
+							<xs:annotation><xs:documentation>Eleven genomförde provet men resultatet är borttappat..</xs:documentation></xs:annotation>
+						</xs:enumeration>
 					</xs:restriction></xs:simpleType>
 				</xs:element>
 			</xs:sequence>
