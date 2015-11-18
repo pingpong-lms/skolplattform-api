@@ -60,7 +60,7 @@
 							<xs:annotation><xs:documentation>Eleven borde genomfört provet men avvek.</xs:documentation></xs:annotation>
 						</xs:enumeration>
 						<xs:enumeration value="BORTTAPPAT_RESULTAT">
-							<xs:annotation><xs:documentation>Eleven genomförde provet men resultatet är borttappat..</xs:documentation></xs:annotation>
+							<xs:annotation><xs:documentation>Eleven genomförde provet men resultatet är borttappat.</xs:documentation></xs:annotation>
 						</xs:enumeration>
 					</xs:restriction></xs:simpleType>
 				</xs:element>

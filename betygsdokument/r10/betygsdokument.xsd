@@ -47,8 +47,8 @@
 							<xs:enumeration value="VUX_KUNSKAPSINTYG"><xs:annotation><xs:documentation>Kunskapsintyg för kommunal vuxenutbildning utfärdat inom kommunal vuxenutbildning.</xs:documentation></xs:annotation></xs:enumeration>
 							<xs:enumeration value="SFI_BETYG"><xs:annotation><xs:documentation>Betyg för svenska för invandrare (SFI) utfärdat inom svenska för invandrare.</xs:documentation></xs:annotation></xs:enumeration>
 							<xs:enumeration value="GY_STUDIEBEVIS"><xs:annotation><xs:documentation>Studiebevis för gymnasieskolan utfärdat inom gymnasieskolan.</xs:documentation></xs:annotation></xs:enumeration>
-							<xs:enumeration value="GYSAR_STUDIEBEVIS_FOR_INDIVIDUELLT"><xs:annotation><xs:documentation>Gymnasiesärskolebevis för individuellt program utfärdat inom gymnasiesärskolan..</xs:documentation></xs:annotation></xs:enumeration>
-							<xs:enumeration value="GYSAR_STUDIEBEVIS_FOR_NATIONELLT"><xs:annotation><xs:documentation>Gymnasiesärskolebevis för nationellt program utfärdat inom gymnasiesärskolan..</xs:documentation></xs:annotation></xs:enumeration>
+							<xs:enumeration value="GYSAR_STUDIEBEVIS_FOR_INDIVIDUELLT"><xs:annotation><xs:documentation>Gymnasiesärskolebevis för individuellt program utfärdat inom gymnasiesärskolan.</xs:documentation></xs:annotation></xs:enumeration>
+							<xs:enumeration value="GYSAR_STUDIEBEVIS_FOR_NATIONELLT"><xs:annotation><xs:documentation>Gymnasiesärskolebevis för nationellt program utfärdat inom gymnasiesärskolan.</xs:documentation></xs:annotation></xs:enumeration>
 							<xs:enumeration value="GY_GYMNASIEINTYG"><xs:annotation><xs:documentation>Gymnasieintyg utfärdat inom gymnasieskolan.</xs:documentation></xs:annotation></xs:enumeration>
 							<xs:enumeration value="GY_EXAMENSBEVIS_INGENJOR"><xs:annotation><xs:documentation>Gymnasieingenjörsexamen utfärdat inom gymnasieskolan.</xs:documentation></xs:annotation></xs:enumeration>
 							<xs:enumeration value="GY_EXAMENSBEVIS_YRKESFORBEREDANDE"><xs:annotation><xs:documentation>Examenbevis - yrkesexamen för gymnasieskola utfärdat inom gymnasieskolan.</xs:documentation></xs:annotation></xs:enumeration>
