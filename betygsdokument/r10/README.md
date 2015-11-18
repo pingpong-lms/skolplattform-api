@@ -13,7 +13,7 @@ Vid utfärdande av betygsdokument skickas följande information ut:
 - Typ av utgångsdokument (se dokumentation i XSD schemat).
 - Ifall examensbevis - yrkesexamen: Om grundläggande behörighet har uppnåtts.
 - Ifall studievägskod finns för dokumentet: Den utskrivna studievägskoden.
-- En lista på alla de kurser alt. ämnen som är kopplade till betyg som finns på dokumentet
+- En lista på alla de kurser alt. ämnen som är kopplade till betyg som finns på dokumentet.
 
 XSD samt exempelfil
 -------------------
