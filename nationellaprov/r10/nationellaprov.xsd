@@ -17,17 +17,13 @@
 	</xs:element>
 
 	<xs:element name="ämnesresultat">
-		<xs:annotation><xs:documentation>
-			Sammanställning av en persons aktuella i ett visst ämne och årskurs.
-			- elev: Id för eleven provbetyget är för.
-			- ämne: Förkortningen på grundskoleämnet provbetyget är för.
-			- årskurs: Den årskurs provbetyget är för: 3, 6 eller 9.
-		</xs:documentation></xs:annotation>
+		<xs:annotation><xs:documentation>Sammanställning av en persons aktuella i ett visst ämne och årskurs.</xs:documentation></xs:annotation>
 		<xs:complexType>
 			<xs:sequence><xs:element name="sammanvägtprovbetyg" maxOccurs="unbounded"/></xs:sequence>
-			<xs:attribute name="elev" type="xs:string" use="required"/>
-			<xs:attribute name="ämne" type="xs:string" use="required"/>
+			<xs:attribute name="elev" type="xs:string" use="required"><xs:annotation><xs:documentation>Id för eleven provbetyget är för (sourcedid/id från IMS).</xs:documentation></xs:annotation></xs:attribute>
+			<xs:attribute name="ämne" type="xs:string" use="required"><xs:annotation><xs:documentation>Förkortningen på grundskoleämnet provbetyget är för.</xs:documentation></xs:annotation></xs:attribute>
 			<xs:attribute name="årskurs" use="required">
+				<xs:annotation><xs:documentation>Den årskurs det nationella provet genomförts i.</xs:documentation></xs:annotation>
 				<xs:simpleType>
     					<xs:restriction base="xs:positiveInteger">
 						<xs:enumeration value="3"/>

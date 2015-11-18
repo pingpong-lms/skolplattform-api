@@ -7,8 +7,6 @@
 		<xs:documentation>
 			Betyg för elever i PING PONG. Varje gång en elevs betyg uppdateras skickas en students fullständiga
 			betyg i systemet ut. Detta för att hantera att betyg kan korrigeras eller tas bort efter utfärdande.
-
-			Den URL dit informationen skickas ställs in av en systemadministratör.
 		</xs:documentation>
 	</xs:annotation>
 
