@@ -1,6 +1,6 @@
 Nationella prov API, version 1.0
 ================================
-Ett sammanvägt provresultat för nationellt prov utges för:
+Ett sammanvägt provresultat för nationellt prov erhåls för:
 
 1. Ett ämne och en av årskurserna 3, 6 eller 9 i grundskola.
 2. En kurs i gymnasieskolan, kommunal vuxenutbildning eller svenska för invandrare.
