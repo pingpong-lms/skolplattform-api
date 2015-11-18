@@ -1,9 +1,6 @@
 Betyg API, version 1.0
 ======================
-API:et skickar ut betygsrelaterad information vid två händelser i systemet:
-
-1. Vid ändrade betygsuppgifter.
-2. Vid utfärdande av vissa betygsrelaterade dokument.
+API:et skickar ut betygsrelaterad information vid ändrade betygsuppgifter.
 
 Information om ändrade betygsuppgifter
 --------------------------------------
