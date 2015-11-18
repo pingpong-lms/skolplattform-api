@@ -47,7 +47,6 @@
 	<xs:element name="sammanvägtprovbetyg">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="inmatat" type="xs:date"><xs:annotation><xs:documentation>Det datum då betyget matades in i betyget.</xs:documentation></xs:annotation></xs:element>
 				<xs:element name="betyg">
 					<xs:simpleType><xs:restriction base="xs:string">
 						<xs:enumeration value="A"/>
@@ -64,6 +63,7 @@
 						</xs:enumeration>
 					</xs:restriction></xs:simpleType>
 				</xs:element>
+				<xs:element name="inmatat" type="xs:date"><xs:annotation><xs:documentation>Det datum då betyget matades in i betyget.</xs:documentation></xs:annotation></xs:element>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
