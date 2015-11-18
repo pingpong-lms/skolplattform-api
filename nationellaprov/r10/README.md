@@ -10,22 +10,22 @@ Med _provområde_ avses därför hädanefter antingen kombinationen av ett ämne
 Vanligast är att en elev erhåller endast ett nationellt provresultat inom ett provområde, men kan under vissa omständigheter erhålla flera.  
 För att stödja detta skickar systemet ut en lista av alla sammanvägda provbetyg inom ett provområde när ett provbetyg blivit tillagt, uppdaterat eller borttaget.
 
-Information om sammanväga provresultat
+Information om sammanvägda provresultat
 --------------------------------------
 För varje provområde erhålls följande information:
 
 - Identifierare för eleven.
-- Provområde.
-- En lista av provresultat, som kan vara tomt om alla tidigare resultat är borttagna. Varje provresultat innehåller:
+- Provområde (grundskoleämne och årskurs i grundskolan, kurs för övriga).
+- En lista av sammanvägda provresultat, som kan vara tomt om alla tidigare resultat är borttagna. Varje provresultat innehåller:
 	- Betygets värde (A-F), eller 
 
 XSD samt exempelfil
 -------------------
 Bifogat till detta dokument finns ett XSD-schema som definierar informationen:
-- [nationellaprov.xsd](nationellaprov.xsd) - schemat för hur information om nationella provresultat kommuniceras.
+- [nationellaprov.xsd](nationellaprov.xsd)
 
 Bifogat till detta dokument finns även en exempelfil på händelsedata som skulle kunna skickas ut:
-- [nationellaprov-exempel.xml](nationellaprov-exempel.xml) - exempelfil för hur information om nationella provresultat kommuniceras.
+- [nationellaprov-exempel.xml](nationellaprov-exempel.xml)
 
 Ändringshistorik
 ----------------
