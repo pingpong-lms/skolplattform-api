@@ -5,7 +5,7 @@ Ett sammanvägt provresultat för nationellt prov utges för:
 1. Ett ämne och en av årskurserna 3, 6 eller 9 i grundskola.
 2. En kurs i gymnasieskolan, kommunal vuxenutbildning eller svenska för invandrare.
 
-Med _provområde_ avses hädanefter antingen kombinationen av ett ämne och årskurs i grundskolan (t.ex. Matematik åk 9) eller en kurs i gymnasiet.
+Med _provområde_ avses därför hädanefter antingen kombinationen av ett ämne och årskurs i grundskolan (t.ex. Matematik åk 9) eller en kurs i gymnasiet.
 
 Vanligast är att en elev erhåller endast ett nationellt provresultat inom ett provområde, men kan under vissa omständigheter erhålla flera.
 
