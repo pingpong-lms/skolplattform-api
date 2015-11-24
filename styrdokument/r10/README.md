@@ -2,8 +2,6 @@ Styrdokument API, version 1.0
 =============================
 Med ett _styrdokument_ avses här antingen en individuell utvecklingsplan (IUP) eller ett åtgärdsprogram. Via detta API kan information om vilka elever som har vilka styrdokument erhållas.
 
-När ett styrdokument lagts till eller tagits bort/avslutats skickas informationen över om vilka styrdokument en elev har efter ändringen. En elev kan därför förekomma med tomt elev-element (<elev id="..." />) om inget tidigare kommunicerat styrdokument längre är aktivt.
-
 Information om styrdokument
 ---------------------------
 För varje elev erhålls följande information:
@@ -20,6 +18,18 @@ Bifogat till detta dokument finns det XSD-schema som definierar informationen:
 
 Bifogat till detta dokument finns även en exempelfil på händelsedata som skulle kunna skickas ut:
 - [styrdokument-exempel.xml](styrdokument-exempel.xml)
+
+API för att erhålla uppdaterade styrdokument under ett tidsintervall
+--------------------------------------------------------------------
+För att erhålla information om alla elever vars styrdokument lagts till eller tagits bort/avslutats under ett visst tidsintervall görs ett HTTP GET-anrop till följande endpoint:
+
+    /api/steering-documents/updated?from=${FROM}&to=${TO}
+
+Formatet på `FROM` och `TO`-parametrarna, som beskriver tidsintervallet för ändringar, är `YYYY-MM-DDThh:mm`. Exempel: `2015-02-04T12:30`.
+
+Informationen som returneras är den nuvarande i systemet, oavsett angivet tidsintervall - tidsintervallet filtrerar vilka elever informationen tas ut för, men det är alltid nuvarande information som erhålls per elev.
+
+HTTP-statuskoden vid korrekt användning är `200 OK` där response body är ett XML-dokument enligt [styrdokument.xsd](styrdokument.xsd) - notera att &lt;styrdokument&gt;-elementet kan vara tomt ifall ingen elevs styrdokument blivit uppdaterade under det angivna intervallet.
 
 Ändringshistorik
 ----------------
