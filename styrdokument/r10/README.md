@@ -1,15 +1,27 @@
 Styrdokument API, version 1.0
 =============================
-Med ett _styrdokument_ avses här antingen en individuell utvecklingsplan (IUP) eller ett åtgärdsprogram. Via detta API kan information om vilka elever som har vilka styrdokument erhållas.
+Med _styrdokument_ avses här följande dokument:
+
+- Individuella utvecklingsplaner (IUP)
+- Samtalsunderlag inför utvecklingssamtal.
+- Åtgärdsprogram.
+
+Aktuella skolformer är Förskoleklass, Grundskola, Grundsärskola, Gymnasieskola, Gymnasiesärskola, Kommunal vuxenutbildning.
+
+Via detta API kan information om vilka elever som har vilka styrdokument erhållas.
 
 Information om styrdokument
 ---------------------------
-För varje elev erhålls följande information:
+För varje elev erhålls en lista av dokument där varje dokument har följande attribut:
 
-- Identifierare för eleven.
-- Aktuella styrdokument:
-  - åtgärdsprogram: Elementets närvaro indikerar att aktuellt åtgärdsprogram finns för personen.
-  - iup: Elementets närvaro indikerar att aktuellt individuell utvecklingsplan finns för personen.
+- typ: Typ av dokument: `iup`, `samtalsunderlag`, `åtgärdsprogram`.
+- skapat: Det datum då dokumentet synliggjorts för elev och vårdnadshavare.
+- avslutat: Det datum då dokumentet inte längre anses vara gällande. Behöver inte finnas för aktiva dokument.
+- skola: Den skola där dokumentet upprättats.
+- skolform: Den skolform dokumentet upprättades inom.
+- namn: Beskrivande namn på dokumentet.
+
+Det är den fullständiga listan av dokument som erhålls, vilket innebär att ett borttaget dokument (ej att förväxla med ett avslutat dokument) indikeras genom dess frånvaro i listan.
 
 XSD samt exempelfil
 -------------------
@@ -21,15 +33,23 @@ Bifogat till detta dokument finns även en exempelfil på händelsedata som skul
 
 API för att erhålla uppdaterade styrdokument under ett tidsintervall
 --------------------------------------------------------------------
-För att erhålla information om alla elever vars styrdokument lagts till eller tagits bort/avslutats under ett visst tidsintervall görs ett HTTP GET-anrop till följande endpoint:
+För att erhålla information om alla elever vars styrdokument lagts till, avslutats eller tagits bort under ett visst tidsintervall görs ett HTTP GET-anrop till följande endpoint:
 
     /api/steering-documents/updated?from=${FROM}&to=${TO}
 
 Formatet på `FROM` och `TO`-parametrarna, som beskriver tidsintervallet för ändringar, är `YYYY-MM-DDThh:mm`. Exempel: `2015-02-04T12:30`.
 
-Informationen som returneras är den nuvarande i systemet, oavsett angivet tidsintervall - tidsintervallet filtrerar vilka elever informationen tas ut för, men det är alltid nuvarande information som erhålls per elev.
+Informationen som returneras är den nuvarande i systemet, oavsett angivet tidsintervall - tidsintervallet filtrerar vilka elever informationen tas ut för, men det är alltid nuvarande information som erhålls per elev. Det är den fullständiga listan av dokument som erhålls, vilket innebär att ett borttaget dokument (ej att förväxla med ett avslutat dokument) indikeras genom dess frånvaro i listan.
 
 HTTP-statuskoden vid korrekt användning är `200 OK` där response body är ett XML-dokument enligt [styrdokument.xsd](styrdokument.xsd) - notera att &lt;styrdokument&gt;-elementet kan vara tomt ifall ingen elevs styrdokument blivit uppdaterade under det angivna intervallet.
+
+Länk till dokument
+------------------
+En länk till dokument av en viss typ erhålls genom URL:en
+
+    /link/steering-document?student=...&documentType=...&school=...
+
+där `student`-parametern är elevens id (sourcedid/id), `documentType`-parametern är dokumenttypen och `school` den skola som ska länkas in i.
 
 Ändringshistorik
 ----------------

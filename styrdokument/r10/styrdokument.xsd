@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema targetNamespace="http://pingpong.se/schemas/documents/v1.0"
-           xmlns="http://pingpong.se/schemas/documents/v1.0"
+<xs:schema targetNamespace="http://pingpong.se/schemas/steering-documents/v1.0"
+           xmlns="http://pingpong.se/schemas/steering-documents/v1.0"
 	   xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	   elementFormDefault="qualified">
 	<xs:annotation>
@@ -23,12 +23,37 @@
 			<xs:documentation>Sammanställning av en persons aktuella styrdokument.</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="åtgärdsprogram" minOccurs="0" />
-				<xs:element name="iup" minOccurs="0" />
-			</xs:sequence>
+			<xs:sequence><xs:element ref="dokument" minOccurs="0" maxOccurs="unbounded"/></xs:sequence>
 			<xs:attribute name="id" type="xs:string" use="required" />
 		</xs:complexType>
 	</xs:element>
+
+	<xs:element name="dokument"><xs:complexType>
+		<xs:attribute name="typ">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="iup" />
+					<xs:enumeration value="samtalsunderlag" />
+					<xs:enumeration value="åtgärdsprogram" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+
+		<xs:attribute name="namn" type="xs:string" />
+		<xs:attribute name="skapat" type="xs:date" />
+		<xs:attribute name="avslutat" type="xs:date" />
+		<xs:attribute name="skola" type="xs:string" />
+
+		<xs:attribute name="skolform">
+			<xs:simpleType><xs:restriction base="xs:string">
+				<xs:enumeration value="GR" />
+				<xs:enumeration value="GRSAR" />
+				<xs:enumeration value="GY" />
+				<xs:enumeration value="GYSAR" />
+				<xs:enumeration value="VUX" />
+			</xs:restriction> </xs:simpleType>
+		</xs:attribute>
+
+	</xs:complexType></xs:element>
 
 </xs:schema>
