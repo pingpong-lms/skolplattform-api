@@ -29,7 +29,7 @@
 	</xs:element>
 
 	<xs:element name="dokument"><xs:complexType>
-		<xs:attribute name="typ">
+		<xs:attribute name="typ" use="required">
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
 					<xs:enumeration value="iup" />
@@ -39,12 +39,12 @@
 			</xs:simpleType>
 		</xs:attribute>
 
-		<xs:attribute name="namn" type="xs:string" />
-		<xs:attribute name="skapat" type="xs:date" />
+		<xs:attribute name="namn" type="xs:string" use="required" />
+		<xs:attribute name="skapat" type="xs:date" use="required" />
 		<xs:attribute name="avslutat" type="xs:date" />
-		<xs:attribute name="skola" type="xs:string" />
+		<xs:attribute name="skola" type="xs:string" use="required" />
 
-		<xs:attribute name="skolform">
+		<xs:attribute name="skolform" use="required">
 			<xs:simpleType><xs:restriction base="xs:string">
 				<xs:enumeration value="GR" />
 				<xs:enumeration value="GRSAR" />
