@@ -14,7 +14,7 @@ Information om styrdokument
 ---------------------------
 För varje elev erhålls en lista av dokument där varje dokument har följande attribut:
 
-- typ: Typ av dokument: `iup`, `samtalsunderlag`, `åtgärdsprogram`.
+- typ: Typ av dokument: `iup`, `samtalsunderlag` eller `åtgärdsprogram`.
 - skapat: Det datum då dokumentet synliggjorts för elev och vårdnadshavare.
 - avslutat: Det datum då dokumentet inte längre anses vara gällande. Behöver inte finnas för aktiva dokument.
 - skola: Den skola där dokumentet upprättats.
