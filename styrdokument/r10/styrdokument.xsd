@@ -46,6 +46,7 @@
 
 		<xs:attribute name="skolform" use="required">
 			<xs:simpleType><xs:restriction base="xs:string">
+				<xs:enumeration value="FSKK" />
 				<xs:enumeration value="GR" />
 				<xs:enumeration value="GRSAR" />
 				<xs:enumeration value="GY" />
