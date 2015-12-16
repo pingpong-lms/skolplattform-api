@@ -18,7 +18,7 @@ För varje provområde erhålls följande information:
 - Identifierare för den elev vars sammanställda provresultat ändrats.
 - Provområde (grundskoleämne och årskurs i grundskolan, kurs för övriga).
 - En lista av sammanvägda provresultat, som kan vara tomt om alla tidigare resultat är borttagna. Varje provresultat innehåller:
-	- Betygets värde (A-F) eller information om att eleven inte deltagit eller att provresultatet tappats bort.
+	- Betygets värde (A-F) eller information om att eleven inte deltagit, eller att provresultatet tappats bort.
 	- Det datum då inmatningen av provresultatet gjordes.
 
 XSD samt exempelfil
