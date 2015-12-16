@@ -11,8 +11,7 @@ Ett sammanvägt provresultat för nationellt prov erhålls för:
 
 Med _provområde_ avses här antingen kombinationen av ett ämne och årskurs i grundskolan (t.ex. Matematik åk 9) eller en kurs i gymnasiet.
 
-Vanligast är att en elev erhåller endast ett nationellt provresultat inom ett provområde, men kan under vissa omständigheter erhålla flera.  
-För att stödja detta skickar systemet ut en lista av alla sammanvägda provbetyg inom ett provområde när ett provbetyg blivit tillagt, uppdaterat eller borttaget.
+Vanligast är att en elev erhåller endast ett nationellt provresultat inom ett provområde, men kan under vissa omständigheter erhålla flera. För att stödja detta skickar systemet ut en lista av alla sammanvägda provbetyg inom ett provområde när ett provbetyg blivit tillagt, uppdaterat eller borttaget.
 
 För varje provområde erhålls följande information:
 
