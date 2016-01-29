@@ -35,9 +35,9 @@ API för att erhålla uppdaterade styrdokument under ett tidsintervall
 --------------------------------------------------------------------
 För att erhålla information om alla elever vars styrdokument lagts till, avslutats eller tagits bort under ett visst tidsintervall görs ett HTTP GET-anrop till följande endpoint:
 
-    /api/steering-documents/updated?from=${FROM}&to=${TO}
+    /api/skolplattform/styrdokument?from=${FROM}&tom=${TO}
 
-Formatet på `FROM` och `TO`-parametrarna, som beskriver tidsintervallet för ändringar, är `YYYY-MM-DDThh:mm`. Exempel: `2015-02-04T12:30`.
+Formatet på `from` och `tom`-parametrarna, som beskriver tidsintervallet för ändringar, är `yyyy-MM-ddTHH:mm`. Exempel: `2015-02-04T12:30`.
 
 Informationen som returneras är den nuvarande i systemet, oavsett angivet tidsintervall - tidsintervallet filtrerar vilka elever informationen tas ut för, men det är alltid nuvarande information som erhålls per elev. Det är den fullständiga listan av dokument som erhålls, vilket innebär att ett borttaget dokument (ej att förväxla med ett avslutat dokument) indikeras genom dess frånvaro i listan.
 
