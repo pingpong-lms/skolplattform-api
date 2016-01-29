@@ -33,7 +33,7 @@ API för att erhålla nationella provresultat ändrade under ett tidsintervall
 ---------------------------------------------------------------------------
 För att erhålla information om alla elevers provområden vars nationella provresultat ändrats under ett visst tidsintervall görs ett HTTP GET-anrop till följande endpoint:
 
-    /api/skolplattform/nationellaprov?from=${FROM}&tom=${TO}
+    /api/skolplattform/nationellaprov?from=${FROM}&tom=${TOM}
 
 Formatet på `from` och `tom`-parametrarna, som beskriver tidsintervallet för ändringar, är `yyyy-MM-ddTHH:mm`. Exempel: `2015-02-04T12:30`.
 
