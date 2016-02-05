@@ -26,7 +26,6 @@
 				<xs:annotation><xs:documentation>Den årskurs det nationella provet genomförts i.</xs:documentation></xs:annotation>
 				<xs:simpleType>
     					<xs:restriction base="xs:positiveInteger">
-						<xs:enumeration value="3"/>
 						<xs:enumeration value="6"/>
 						<xs:enumeration value="9"/>
     					</xs:restriction>
