@@ -6,7 +6,7 @@ Med _styrdokument_ avses här följande dokument:
 - Samtalsunderlag inför utvecklingssamtal.
 - Åtgärdsprogram.
 
-Aktuella skolformer är Förskoleklass, Grundskola, Grundsärskola, Gymnasieskola, Gymnasiesärskola, Kommunal vuxenutbildning.
+Aktuella skolformer är Förskoleklass, Grundskola, Grundsärskola, Gymnasieskola, Gymnasiesärskola samt Kommunal vuxenutbildning.
 
 Via detta API kan information om vilka elever som har vilka styrdokument erhållas.
 
