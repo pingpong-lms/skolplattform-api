@@ -60,29 +60,12 @@
 			<xs:element name="prövning" type="xs:boolean"><xs:annotation><xs:documentation>Om betyget erhållts genom prövning.</xs:documentation></xs:annotation></xs:element>
 			<xs:element name="betygsgrupp" type="xs:string" minOccurs="0" maxOccurs="1"><xs:annotation><xs:documentation>Den kursgrupp eller ämnesgrupp betyget satts inom.</xs:documentation></xs:annotation></xs:element>
 			<xs:element name="skola" type="xs:string"><xs:annotation><xs:documentation>Id för den skola vilken betyget satts inom (sourcedid/id från IMS).</xs:documentation></xs:annotation></xs:element>
-			<xs:element ref="beslutsfattare" />
-			<xs:element name="skolform">
-				<xs:annotation><xs:documentation>Den skolform betyget beslutats inom.</xs:documentation></xs:annotation>
-				<xs:simpleType>
-					<xs:restriction base="xs:string">
-						<xs:enumeration value="GR" />
-						<xs:enumeration value="GRSAR" />
-						<xs:enumeration value="GY" />
-						<xs:enumeration value="GYSAR" />
-						<xs:enumeration value="SAME" />
-						<xs:enumeration value="SFI" />
-						<xs:enumeration value="SPEC" />
-						<xs:enumeration value="SARVUX" />
-						<xs:enumeration value="VUX" />
-						<xs:enumeration value="YH" />
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:element>
+			<xs:element ref="beslutsfattare"><xs:annotation><xs:documentation>Den eller de personer som beslutat om betyget.</xs:documentation></xs:annotation></xs:element>
+			<xs:element name="skolform" type="Skolform"><xs:annotation><xs:documentation>Den skolform betyget beslutats inom.</xs:documentation></xs:annotation></xs:element>
 		</xs:sequence>
 	</xs:complexType>
 	
 	<xs:element name="beslutsfattare">
-		<xs:annotation><xs:documentation>Den eller de personer som beslutat om betyget.</xs:documentation></xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="person" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
@@ -98,7 +81,20 @@
 			</xs:attribute>
 		</xs:complexType>
 	</xs:element>
-	
+
+	<xs:simpleType name="Skolform">
+			<xs:restriction base="xs:string">
+			<xs:enumeration value="GR" />
+			<xs:enumeration value="GRSAR" />
+			<xs:enumeration value="GY" />
+			<xs:enumeration value="GYSAR" />
+			<xs:enumeration value="SFI" />
+			<xs:enumeration value="SARVUX" />
+			<xs:enumeration value="VUX" />
+			<xs:enumeration value="YH" />
+		</xs:restriction>
+	</xs:simpleType>
+
 	<xs:element name="ämnesbetyg">
 		<xs:annotation><xs:documentation>Betyg för ämnen inom grundskoleutbildning.</xs:documentation></xs:annotation>
 		<xs:complexType>
@@ -131,9 +127,7 @@
 	</xs:element>
 
 	<xs:element name="kursbetyg">
-		<xs:annotation><xs:documentation>
-			En betygsättning inom gymnasieutbildning eller vuxenutbilning.
-		</xs:documentation></xs:annotation>
+		<xs:annotation><xs:documentation>En betygsättning inom gymnasieutbildning eller vuxenutbilning.</xs:documentation></xs:annotation>
 		<xs:complexType>
 			<xs:complexContent>
 				<xs:extension base="betyg">
