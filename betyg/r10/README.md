@@ -43,6 +43,16 @@ Bifogat till detta dokument finns det XSD-schema som definierar informationen:
 Bifogat till detta dokument finns även en exempelfil på händelsedata som skulle kunna skickas ut:
 - [betyg-exempel.xml](betyg-exempel.xml)
 
+API för att erhålla betyg ändrade under ett tidsintervall 
+---------------------
+För att erhålla information om alla elever vars betyg som ändrats under ett visst tidsintervall görs ett HTTP GET-anrop till följande endpoint:
+
+	/api/skolplattform/betyg?from${FROM}&tom${TOM}
+
+Format på `from` och `tom`-parametrarna, som beskriver tidsintervallet för ändringar är, `yyyy-MM-ddTHH:mm`. 
+
+HTTP-statuskoden vid korrekt användning är `200 OK` där response body är ett XML-dokument enligt [betyg.xsd](betyg.xsd).
+
 Ändringshistorik
 ----------------
 Nedan följer en beskrivning av de ändringar som gjorts till olika versioner av detta API:
@@ -64,3 +74,4 @@ Nedan följer en beskrivning av de ändringar som gjorts till olika versioner av
 	- Övergång till svenska genomgående.
 	- Tillägg av betygsliknande omdömen för orienteringskurser i komvux och särvux.
 	- Korrigera dokumentation för att visa att terminer är av typen "HT 2015", inte "HT 8".
+- 1.1 - La till information om hur APIet kan konsumeras

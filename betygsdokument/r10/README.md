@@ -23,7 +23,18 @@ Bifogat till detta dokument finns det XSD-schema som definierar informationen:
 Bifogat till detta dokument finns även en exempelfil på händelsedata som skulle kunna skickas ut:
 - [betygsdokument-exempel.xml](betygsdokument-exempel.xml)
 
+API för att erhålla betygsdokument ändrade under ett tidsintervall
+------------------
+För att erhålla information om alla elever vars betyg / betygsdokument som ändrats under ett visst tidsintervall görs ett HTTP GET-anrop till följande endpoint:
+
+	/api/skolplattform/betygsdokument?from${FROM}&tom${TOM}
+
+Format på `from` och `tom`-parametrarna, som beskriver tidsintervallet för ändringar är, `yyyy-MM-ddTHH:mm`. 
+
+HTTP-statuskoden vid korrekt användning är `200 OK` där response body är ett XML-dokument enligt [betygsdokument.xsd](betygsdokument.xsd).
+
 Ändringshistorik
 ----------------
 Nedan följer en beskrivning av de ändringar som gjorts till olika versioner av detta API:
 - 1.0 - Första versionen, utbrutet från Betyg API.
+- 1.1 - La till information om hur APIet kan konsumeras
