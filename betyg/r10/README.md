@@ -32,7 +32,7 @@ Varje betygsuppgift innehåller följande information:
 - Ifall Moderna språk eller Modersmål: Språkkod för det lästa språket.
 - Ifall Teckenspråk för hörande eller Moderna språk: Om ämnet är läst inom Elevens val eller Språkval.
 - Identifierare för de personer som beslutat om betygsuppgiften (finns inte för externt inlagda betyg).
-- Skolform för skolenheten som utfärdat betygsuppgiften.
+- Skolform som kursen/ämnet har lästs inom.
 - En flagga som berättar ifall betygsuppgiften är ett betyg eller ett betygsliknande omdöme.
 
 XSD samt exempelfi
