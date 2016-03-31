@@ -20,6 +20,8 @@ För varje provområde erhålls följande information:
 - En lista av sammanvägda provresultat, som kan vara tomt om alla tidigare resultat är borttagna. Varje provresultat innehåller:
 	- Betygets värde (A-F) eller information om att eleven inte deltagit, eller att provresultatet tappats bort.
 	- Det datum då inmatningen av provresultatet gjordes.
+- En lista av delprovsresultat, som kan vara tomt om provområdet inte använder delprov alternativt om alla tidigare resultat är borttagna. Varje delprovresultat innehåller:
+	- Betygets värde (A-F) eller information om att eleven inte deltagit, eller att delprovresultatet tappats bort
 
 XSD samt exempelfil
 -------------------
