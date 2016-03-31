@@ -19,8 +19,10 @@
 	<xs:element name="ämnesresultat">
 		<xs:annotation><xs:documentation>Sammanställning av en persons aktuella i ett visst ämne och årskurs.</xs:documentation></xs:annotation>
 		<xs:complexType>
-			<xs:sequence><xs:element name="sammanvägtprovbetyg" maxOccurs="unbounded"/></xs:sequence>
-			<xs:sequence><xs:element name="delprovbetyg" minOccurs="0" maxOccurs="unbounded"/></xs:sequence>
+			<xs:sequence>
+				<xs:element name="sammanvägtprovbetyg" maxOccurs="unbounded"/>
+				<xs:element name="delprovbetyg" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
 			<xs:attribute name="elev" type="xs:string" use="required"><xs:annotation><xs:documentation>Id för eleven provbetyget är för (sourcedid/id från IMS).</xs:documentation></xs:annotation></xs:attribute>
 			<xs:attribute name="ämne" type="xs:string" use="required"><xs:annotation><xs:documentation>Förkortningen på grundskoleämnet provbetyget är för.</xs:documentation></xs:annotation></xs:attribute>
 			<xs:attribute name="årskurs" use="required">
@@ -38,8 +40,10 @@
 	<xs:element name="kursresultat">
 		<xs:annotation><xs:documentation>Sammanställning av en persons aktuella sammanvägda provresultat.</xs:documentation></xs:annotation>
 		<xs:complexType>
-			<xs:sequence><xs:element name="sammanvägtprovbetyg" maxOccurs="unbounded"/></xs:sequence>
-                        <xs:sequence><xs:element name="delprovbetyg" minOccurs="0" maxOccurs="unbounded"/></xs:sequence>
+			<xs:sequence>
+				<xs:element name="sammanvägtprovbetyg" maxOccurs="unbounded"/>
+                       		<xs:element name="delprovbetyg" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
 			<xs:attribute name="elev" type="xs:string" use="required"><xs:annotation><xs:documentation>Identifierare för den elev vars sammanvägda provresultat erhålls (sourcedid/id i IMS).</xs:documentation></xs:annotation></xs:attribute>
 			<xs:attribute name="kurs" type="xs:string" use="required"><xs:annotation><xs:documentation>Kurskod för kursen vars sammanvägda provresultat erhålls.</xs:documentation></xs:annotation></xs:attribute>
 		</xs:complexType>

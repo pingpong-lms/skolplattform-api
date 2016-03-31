@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <styrdokument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-                 xmlns="http://pingpong.se/schemas/steering-documents/v1.0">
+                 xmlns="http://pingpong.se/schemas/steering-documents/v1.1">
 
 	<elev id="{d7b3374b-985a-4d43-9558-189e6643755a}">
 		<dokument typ="iup"

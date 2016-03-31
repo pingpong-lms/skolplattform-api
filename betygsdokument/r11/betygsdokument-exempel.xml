@@ -1,7 +1,7 @@
 <!DOCTYPE xml>
 <betygsdokument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-                 xmlns="http://pingpong.se/schemas/betygsdokument/v1.0">
+                 xmlns="http://pingpong.se/schemas/betygsdokument/v1.1">
 
     <!--  Slutbetyg utfärdat inom skolenheten Södervikskolan (skolenhetskod=49021135) -->
     <dokument>
