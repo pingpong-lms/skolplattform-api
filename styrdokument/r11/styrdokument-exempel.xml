@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<styrdokument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                 xmlns="http://pingpong.se/schemas/steering-documents/v1.0">
+
+	<elev id="{d7b3374b-985a-4d43-9558-189e6643755a}">
+		<dokument typ="iup"
+			  skapat="2014-09-01"
+			  avslutat="2015-01-18"
+			  skola="{db1d2ea1-44f1-42e8-8018-6878e4a63e62}"
+			  skolform="GR"
+			  namn="Individuell utvecklingsplan HT 2014"/>
+		<dokument typ="iup"
+			  skapat="2015-01-18"
+			  skola="{db1d2ea1-44f1-42e8-8018-6878e4a63e62}"
+			  skolform="GR"
+			  namn="Individuell utvecklingsplan VT 2015"/>
+	</elev>
+
+</styrdokument>

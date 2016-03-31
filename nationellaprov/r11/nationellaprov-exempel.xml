@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provresultat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                 xmlns="http://pingpong.se/schemas/nationellaprov/v1.0">
+
+	<ämnesresultat elev="{d7b3374b-985a-4d43-9558-189e6643755a}" ämne="MA" årskurs="6">
+		<sammanvägtprovbetyg>
+		    <betyg>B</betyg>
+		    <inmatat>2015-05-04</inmatat>
+		</sammanvägtprovbetyg>
+	</ämnesresultat>	
+
+	<ämnesresultat elev="{d7b3374b-985a-4d43-9558-189e6643755a}" ämne="MA" årskurs="9">
+		<sammanvägtprovbetyg>
+		    <betyg>B</betyg>
+		    <inmatat>2015-05-04</inmatat>
+		</sammanvägtprovbetyg>
+		<sammanvägtprovbetyg>
+		    <betyg>B</betyg>
+		    <inmatat>2014-05-14</inmatat>
+		</sammanvägtprovbetyg>
+	</ämnesresultat>
+
+	<kursresultat elev="{0c23677c-8ddc-11e5-8994-feff819cdc9f}" kurs="ENGENG05">
+		<sammanvägtprovbetyg>
+		    <betyg>B</betyg>
+		    <inmatat>2014-05-14</inmatat>
+		</sammanvägtprovbetyg>
+	</kursresultat>	
+
+</provresultat>
