@@ -55,3 +55,4 @@ där `student`-parametern är elevens id (sourcedid/id), `documentType`-paramete
 ----------------
 Nedan följer en beskrivning av de ändringar som gjorts till olika versioner av detta API:
 - 1.0 - Första utkast, inga ändringar har lagts till sedan StyrdokumentAPI 1.0 
+- 1.1 La till "from" och "tom" attribut till "betyg" elementet som visar vilka argument som skickades in för att skapa xml:en

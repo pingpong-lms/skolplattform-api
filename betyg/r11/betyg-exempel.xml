@@ -1,7 +1,9 @@
 <!DOCTYPE xml>
 <betyg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-                 xmlns="http://pingpong.se/schemas/grades/v1.1">
+                 xmlns="http://pingpong.se/schemas/grades/v1.1"
+		 from="2014-12-17T09:00:00"
+		 tom="2015-12-19T09:00:00">
     
 	<elev id="{d7b3374b-985a-4d43-9558-189e6643755a}">
 	    <!-- Gymnasieskurs: Reparation av motorcyklar och ATV -->

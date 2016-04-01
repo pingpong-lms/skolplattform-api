@@ -15,6 +15,8 @@
 			<xs:sequence>
 				<xs:element ref="elev" minOccurs="0" maxOccurs="unbounded" />
 			</xs:sequence>
+			<xs:attribute name="from" type="xs:dateTime" use="required" />
+                        <xs:attribute name="tom" type="xs:dateTime" use="required" />
 		</xs:complexType>
 	</xs:element>
 

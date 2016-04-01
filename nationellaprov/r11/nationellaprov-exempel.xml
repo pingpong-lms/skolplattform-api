@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <provresultat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-                 xmlns="http://pingpong.se/schemas/nationellaprov/v1.1">
+                 xmlns="http://pingpong.se/schemas/nationellaprov/v1.1"
+		 from="2015-05-01T09:00:00"
+		 tom="2015-05-31T09:00:00">
 
 	<ämnesresultat elev="{d7b3374b-985a-4d43-9558-189e6643755a}" ämne="MA" årskurs="6">
 		<sammanvägtprovbetyg>
