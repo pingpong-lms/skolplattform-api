@@ -5,6 +5,13 @@
 		 from="2015-05-01T09:00:00"
 		 tom="2015-05-31T09:00:00">
 
+	<ämnesresultat elev="{df324j43-3j13-to04-dfu8-fb0429mu39g8}" ämne="MA" årskurs="3">
+		<delprovbetyg>
+			<poäng>20</poäng>
+			<typ>SKRIVA</typ>
+		</delprovbetyg>
+	</ämnesresultat>
+
 	<ämnesresultat elev="{d7b3374b-985a-4d43-9558-189e6643755a}" ämne="MA" årskurs="6">
 		<sammanvägtprovbetyg>
 		    <betyg>B</betyg>
@@ -30,6 +37,7 @@
 		</sammanvägtprovbetyg>
 		<delprovbetyg>
 		    <betyg>B</betyg>
+		    <typ>LÄSA</typ>
 		</delprovbetyg>
 	</kursresultat>	
 
