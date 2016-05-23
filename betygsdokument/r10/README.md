@@ -38,3 +38,4 @@ HTTP-statuskoden vid korrekt användning är `200 OK` där response body är ett
 Nedan följer en beskrivning av de ändringar som gjorts till olika versioner av detta API:
 - 1.0 - Första versionen, utbrutet från Betyg API.
 - 1.1 - La till information om hur APIet kan konsumeras
+- 1.2 - La till så att skapat datument skickas

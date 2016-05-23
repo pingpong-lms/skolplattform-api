@@ -28,6 +28,9 @@
 				<xs:element name="utfärdat" type="xs:date">
 					<xs:annotation><xs:documentation>Det datum dokumentet utfärdats.</xs:documentation></xs:annotation>
 				</xs:element>
+				<xs:element name="skapat" type="xs:date">
+                                        <xs:annotation><xs:documentation>Det datum dokumentet skapades.</xs:documentation></xs:annotation>
+                                </xs:element>
 				<xs:element name="skola" type="xs:string">
 					<xs:annotation><xs:documentation>Identifierare för den skolgruppen där dokumentet utfärdats (sourcedid/id i IMS).</xs:documentation></xs:annotation>
 				</xs:element>

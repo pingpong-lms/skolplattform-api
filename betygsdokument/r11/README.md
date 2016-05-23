@@ -38,3 +38,4 @@ HTTP-statuskoden vid korrekt användning är `200 OK` där response body är ett
 Nedan följer en beskrivning av de ändringar som gjorts till olika versioner av detta API:
 - 1.0 - Första utkast, inga ändringar har lagst till sedan BetygsdokumentsAPI 1.0
 - 1.1 La till "from" och "tom" attribut till "betyg" elementet som visar vilka argument som skickades in för att skapa xml:en
+- 1.2 La till så att skapa datum skickas
