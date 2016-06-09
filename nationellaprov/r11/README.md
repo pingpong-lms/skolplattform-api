@@ -46,6 +46,6 @@ HTTP-statuskoden vid korrekt användning är `200 OK` där response body är ett
 Ändringshistorik
 ----------------
 Nedan följer en beskrivning av de ändringar som gjorts till olika versioner av detta API:
-- 1.0 - Första utkast, har lagt till att delprovsbetyg finns med i shemat.
-- 1.1 La till "from" och "tom" attribut till "betyg" elementet som visar vilka argument som skickades in för att skapa xml:en
-- 1.2 La till "poäng" för nationella provn som använder poäng istället för betygs (A-F). La till "typ" till delporvsbetyg för att visa liken sorts delprov det är.
+- 1.0 Första utkast.
+- 1.1 La till "from" och "tom" attribut till betyg-elementet som visar vilket tidsintervall som använts för att skapa xml:en.
+- 1.2 La till "poäng" för nationella prov som använder poäng istället för betyg (A-F). La till "typ" till delprovsbetyg för att visa vilken sorts delprov det är.
