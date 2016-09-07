@@ -4,23 +4,25 @@ Via detta API kan information om elevers sammanvägda provresultat på nationell
 
 Information om sammanvägda provresultat
 --------------------------------------
-Ett sammanvägt provresultat för nationellt prov erhålls för:
+Ett sammanvägt provresultat för nationella prov erhålls inom:
 
-1. Ett ämne och en av årskurserna 6 eller 9 i grundskola.
+1. Ett ämne och en av årskurserna 3, 6 eller 9 i grundskola.
 2. En kurs i gymnasieskolan, kommunal vuxenutbildning eller svenska för invandrare.
 
 Med _provområde_ avses här antingen kombinationen av ett ämne och årskurs i grundskolan (t.ex. Matematik åk 9) eller en kurs i gymnasiet.
 
-Vanligast är att en elev erhåller endast ett nationellt provresultat inom ett provområde, men kan under vissa omständigheter erhålla flera. För att stödja detta skickar systemet ut en lista av alla sammanvägda provbetyg inom ett provområde när ett provbetyg blivit tillagt, uppdaterat eller borttaget.
+Vanligast är att en elev erhåller endast ett nationellt provresultat inom ett provområde, men kan under vissa omständigheter erhålla flera. För att stödja detta skickar systemet ut en lista av alla provtillfällen inom ett provområde när ett provbetyg blivit tillagt, uppdaterat eller borttaget inom det området.
 
-För varje provområde erhålls följande information:
+För varje elev med uppdaterat information inom provområdet erhålls följande information:
 
-- Identifierare för den elev vars sammanställda provresultat ändrats.
-- Provområde (grundskoleämne och årskurs i grundskolan, kurs för övriga).
+- Identifierare för den elev vars provresultat ändrats.
+- Det datum då informationen om provresultat senast uppdaterades.
+- Provområde: grundskoleämne och årskurs i grundskolan, kurs för övriga skolformer.
+- En lista av provtillfällen inom provområdet, där varje provtillfälle innehåller:
 - En lista av sammanvägda provresultat, som kan vara tomt om alla tidigare resultat är borttagna. Varje provresultat innehåller:
-	- Betygets värde (A-F) eller information om att eleven inte deltagit, eller att provresultatet tappats bort.
-	- Det datum då inmatningen av provresultatet gjordes.
-- En lista av delprovsresultat, som kan vara tomt om provområdet inte använder delprov alternativt om alla tidigare resultat är borttagna. Varje delprovresultat innehåller:
+	- En markör ifall resultatet tappats bort, eller eleven avvek från provtillfället. Om så är fallet finns ingen mer information.
+	- Sammanvägt provbetyg (A-F) eller information om att eleven inte deltagit, eller att provresultatet tappats bort.
+	- En lista av delprovsresultat, som kan vara tomt om provområdet inte använder delprov alternativt om alla tidigare resultat är borttagna. Varje delprovresultat innehåller:
 	- Betygets värde (A-F) eller information om att eleven inte deltagit, eller att delprovresultatet tappats bort
 
 XSD samt exempelfil
@@ -49,3 +51,4 @@ Nedan följer en beskrivning av de ändringar som gjorts till olika versioner av
 - 1.0 Första utkast.
 - 1.1 La till "from" och "tom" attribut till betyg-elementet som visar vilket tidsintervall som använts för att skapa xml:en.
 - 1.2 La till "poäng" för nationella prov som använder poäng istället för betyg (A-F). La till "typ" till delprovsbetyg för att visa vilken sorts delprov det är.
+- 1.3 Uppdatering och förbättringar av XML-schemat.
