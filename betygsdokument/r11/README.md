@@ -15,6 +15,8 @@ Vid utfärdande av betygsdokument skickas följande information ut:
 - Ifall studievägskod finns för dokumentet: Den utskrivna studievägskoden.
 - En lista på alla de kurser alt. ämnen som är kopplade till betyg som finns på dokumentet.
 
+Endast det senaste utfärdade dokumentet av varje typ skickas.
+
 XSD samt exempelfil
 -------------------
 Bifogat till detta dokument finns det XSD-schema som definierar informationen:
@@ -36,6 +38,7 @@ HTTP-statuskoden vid korrekt användning är `200 OK` där response body är ett
 Ändringshistorik
 ----------------
 Nedan följer en beskrivning av de ändringar som gjorts till olika versioner av detta API:
-- 1.0 - Första utkast, inga ändringar har lagst till sedan BetygsdokumentsAPI 1.0
-- 1.1 La till "from" och "tom" attribut till "betyg" elementet som visar vilka argument som skickades in för att skapa xml:en
-- 1.2 La till så att skapa datum skickas
+- 1.0 Första utkast, inga ändringar har lagst till sedan v1.0.
+- 1.1 La till "from" och "tom" attribut till "betyg" elementet som visar vilka argument som skickades in för att skapa xml:en.
+- 1.2 La till så att skapat datum skickas.
+- 1.3 Ta bort skapat datum, skicka enbart senaste utfärdade dokumentet av varje typ.
