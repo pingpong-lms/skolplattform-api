@@ -56,18 +56,14 @@
 					<xs:element ref="sammanvägtprovbetyg" minOccurs="0"/>
 					<xs:element ref="delprovsresultat" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
-				<xs:sequence>
-					<xs:element name="intedeltagit">
-						<xs:annotation><xs:documentation>Eleven borde genomfört provet men avvek.</xs:documentation></xs:annotation>
-						<xs:complexType/>
-					</xs:element>
-				</xs:sequence>
-				<xs:sequence>
-					<xs:element name="borttappat">
-						<xs:annotation><xs:documentation>Eleven genomförde provet men resultatet är borttappat.</xs:documentation></xs:annotation>
-						<xs:complexType/>
-					</xs:element>
-				</xs:sequence>
+				<xs:element name="intedeltagit">
+					<xs:annotation><xs:documentation>Eleven borde genomfört provet men avvek.</xs:documentation></xs:annotation>
+					<xs:complexType/>
+				</xs:element>
+				<xs:element name="borttappat">
+					<xs:annotation><xs:documentation>Eleven genomförde provet men resultatet är borttappat.</xs:documentation></xs:annotation>
+					<xs:complexType/>
+				</xs:element>
 			</xs:choice>
 			<xs:attribute name="uppdaterat" type="xs:date" use="required"><xs:annotation><xs:documentation>Det datum då information om provtillfället senast uppdaterades.</xs:documentation></xs:annotation></xs:attribute>
 		</xs:complexType>
