@@ -58,13 +58,13 @@
 				</xs:sequence>
 				<xs:sequence>
 					<xs:element name="intedeltagit">
-						<xs:annotation><xs:documentation>Eleven borde genomfört delprovet men avvek.</xs:documentation></xs:annotation>
+						<xs:annotation><xs:documentation>Eleven borde genomfört provet men avvek.</xs:documentation></xs:annotation>
 						<xs:complexType/>
 					</xs:element>
 				</xs:sequence>
 				<xs:sequence>
 					<xs:element name="borttappat">
-						<xs:annotation><xs:documentation>Eleven genomförde delprovet men resultatet är borttappat.</xs:documentation></xs:annotation>
+						<xs:annotation><xs:documentation>Eleven genomförde provet men resultatet är borttappat.</xs:documentation></xs:annotation>
 						<xs:complexType/>
 					</xs:element>
 				</xs:sequence>
@@ -87,20 +87,26 @@
 	<xs:element name="delprovsresultat">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:choice minOccurs="0">
-					<xs:element name="betyg">
-						<xs:simpleType><xs:restriction base="xs:string">
-							<xs:enumeration value="A"/>
-							<xs:enumeration value="B"/>
-							<xs:enumeration value="C"/>
-							<xs:enumeration value="D"/>
-							<xs:enumeration value="E"/>
-							<xs:enumeration value="F"/>
-						</xs:restriction></xs:simpleType>
-					</xs:element>
-					<xs:element name="poäng" type="xs:integer"/>
+				<xs:choice>
+					<xs:sequence>
+						<xs:choice minOccurs="0">
+							<xs:element name="betyg">
+								<xs:simpleType><xs:restriction base="xs:string">
+									<xs:enumeration value="A"/>
+									<xs:enumeration value="B"/>
+									<xs:enumeration value="C"/>
+									<xs:enumeration value="D"/>
+									<xs:enumeration value="E"/>
+									<xs:enumeration value="F"/>
+								</xs:restriction></xs:simpleType>
+							</xs:element>
+							<xs:element name="poäng" type="xs:integer"/>
+						</xs:choice>
+						<xs:element name="måluppfyllnad" type="xs:boolean" minOccurs="0"/>
+					</xs:sequence>
+					<xs:element name="intedeltagit"><xs:complexType/></xs:element>
+					<xs:element name="borttappat"><xs:complexType/></xs:element>
 				</xs:choice>
-				<xs:element name="måluppfyllnad" type="xs:boolean" minOccurs="0"/>
 				<xs:element name="typ">
 					<xs:simpleType><xs:restriction base="xs:string">
 						<xs:enumeration value="LÄSA"/>

@@ -40,6 +40,10 @@
 				<poäng>20</poäng>
 				<typ>SKRIVA</typ>
 			</delprovsresultat>
+			<delprovsresultat>
+				<borttappat/>
+				<typ>SKRIVA</typ>
+			</delprovsresultat>
 		</provtillfälle>
 	</ämnesresultat>
 
