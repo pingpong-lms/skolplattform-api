@@ -2,59 +2,177 @@
 <provresultat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                  xmlns="http://pingpong.se/schemas/nationellaprov/v1.1"
-		 from="2015-05-01T09:00:00"
-		 tom="2015-05-31T09:00:00">
+		 from="2016-09-01T00:00:00"
+		 tom="2015-09-02T20:00:00">
 
-	<ämnesresultat elev="{df324j43-3j13-to04-dfu8-fb0429mu39g8}" ämne="MA" årskurs="3">
-		<provtillfälle uppdaterat="2014-01-01">
+	<ämnesresultat elev="{df324j43-3j13-to03-dfu8-fb0429mu39g8}" ämne="MA" årskurs="3">
+		<provtillfälle uppdaterat="2016-09-01">
 			<delprovsresultat>
-				<poäng>20</poäng>
-				<typ>SKRIVA</typ>
+				<måluppfyllnad>true</måluppfyllnad>
+				<typ>ANNAN</typ>
 			</delprovsresultat>
-		</provtillfälle>
-	</ämnesresultat>
-
-	<ämnesresultat elev="{d7b3374b-985a-4d43-9558-189e6643755a}" ämne="MA" årskurs="6">
-		<provtillfälle uppdaterat="2015-05-04">
-			<sammanvägtprovbetyg>A</sammanvägtprovbetyg>
-		</provtillfälle>
-	</ämnesresultat>	
-
-	<ämnesresultat elev="{d7b3374b-985a-4d43-9558-189e6643755a}" ämne="MA" årskurs="6">
-		<provtillfälle uppdaterat="2015-05-04">
-			<intedeltagit/>
-		</provtillfälle>
-	</ämnesresultat>	
-
-	<ämnesresultat elev="{d7b3374b-985a-4d43-9558-189e6643755a}" ämne="MA" årskurs="9">
-		<provtillfälle uppdaterat="2015-05-04">
-			<sammanvägtprovbetyg>B</sammanvägtprovbetyg>
+			<delprovsresultat>
+				<poäng>24</poäng>
+				<måluppfyllnad>true</måluppfyllnad>
+				<typ>ANNAN</typ>
+			</delprovsresultat>
 			<delprovsresultat>
 				<poäng>10</poäng>
-				<typ>SKRIVA</typ>
+				<måluppfyllnad>true</måluppfyllnad>
+				<typ>ANNAN</typ>
 			</delprovsresultat>
-		</provtillfälle>
-		<provtillfälle uppdaterat="2016-06-01">
-			<sammanvägtprovbetyg>B</sammanvägtprovbetyg>
 			<delprovsresultat>
-				<poäng>20</poäng>
-				<typ>SKRIVA</typ>
+				<poäng>10</poäng>
+				<måluppfyllnad>true</måluppfyllnad>
+				<typ>ANNAN</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<intedeltagit/>
+				<typ>ANNAN</typ>
 			</delprovsresultat>
 			<delprovsresultat>
 				<borttappat/>
-				<typ>SKRIVA</typ>
+				<typ>ANNAN</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<poäng>1</poäng>
+				<måluppfyllnad>false</måluppfyllnad>
+				<typ>ANNAN</typ>
 			</delprovsresultat>
 		</provtillfälle>
 	</ämnesresultat>
 
-	<kursresultat elev="{0c23677c-8ddc-11e5-8994-feff819cdc9f}" kurs="ENGENG05">
-		<provtillfälle uppdaterat="2015-05-04">
+	<ämnesresultat elev="{df324j43-3j13-to04-dfu8-fb0429mu39g8}" ämne="SV" årskurs="6">
+		<provtillfälle uppdaterat="2016-09-01">
 			<sammanvägtprovbetyg>B</sammanvägtprovbetyg>
 			<delprovsresultat>
-			    <betyg>B</betyg>
-			    <typ>LÄSA</typ>
+				<betyg>A</betyg>
+				<typ>ANNAN</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>B</betyg>
+				<typ>ANNAN</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>C</betyg>
+				<typ>ANNAN</typ>
 			</delprovsresultat>
 		</provtillfälle>
-	</kursresultat>	
+	</ämnesresultat>
+
+	<ämnesresultat elev="{df324j43-3j13-to05-dfu8-fb0429mu39g8}" ämne="SV" årskurs="6">
+		<provtillfälle uppdaterat="2016-09-01">
+			<sammanvägtprovbetyg>B</sammanvägtprovbetyg>
+			<delprovsresultat>
+				<betyg>A</betyg>
+				<typ>ANNAN</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>B</betyg>
+				<typ>ANNAN</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<borttappat/>
+				<typ>ANNAN</typ>
+			</delprovsresultat>
+		</provtillfälle>
+		<provtillfälle uppdaterat="2016-09-02">
+			<sammanvägtprovbetyg>A</sammanvägtprovbetyg>
+			<delprovsresultat>
+				<betyg>A</betyg>
+				<typ>ANNAN</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>A</betyg>
+				<typ>ANNAN</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>A</betyg>
+				<typ>ANNAN</typ>
+			</delprovsresultat>
+		</provtillfälle>
+	</ämnesresultat>
+
+	<kursresultat elev="{0c23677c-8ddc-12e5-8994-feff819cdc9f}" kurs="MATMAT01c">
+		<provtillfälle uppdaterat="2016-09-01">
+			<sammanvägtprovbetyg>F</sammanvägtprovbetyg>
+		</provtillfälle>
+	</kursresultat>
+
+	<kursresultat elev="{0c23677c-8ddc-12e5-8994-feff819cdc9f}" kurs="MATMAT01b">
+		<provtillfälle uppdaterat="2016-09-01">
+			<borttappat/>
+		</provtillfälle>
+		<provtillfälle uppdaterat="2016-09-02">
+			<intedeltagit/>
+		</provtillfälle>
+	</kursresultat>
+
+	<kursresultat elev="{0c23677c-8ddc-12e5-8994-feff819cdc9f}" kurs="SVASVA01">
+		<provtillfälle uppdaterat="2016-09-01">
+			<sammanvägtprovbetyg>A</sammanvägtprovbetyg>
+			<delprovsresultat>
+				<betyg>A</betyg>
+				<typ>LÄSA</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>A</betyg>
+				<typ>TALA</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>B</betyg>
+				<typ>SKRIVA</typ>
+			</delprovsresultat>
+		</provtillfälle>
+	</kursresultat>
+
+	<kursresultat elev="{0c23677c-8ddc-11e5-8994-feff819cdc9f}" kurs="MATMAT01a">
+		<provtillfälle uppdaterat="2016-09-01">
+			<sammanvägtprovbetyg>A</sammanvägtprovbetyg>
+		</provtillfälle>
+	</kursresultat>
+
+	<kursresultat elev="{0c23677c-8ddc-11e5-8994-feff819cdc9f}" kurs="SVESVE01">
+		<provtillfälle uppdaterat="2016-09-01">
+			<sammanvägtprovbetyg>A</sammanvägtprovbetyg>
+			<delprovsresultat>
+				<betyg>B</betyg>
+				<typ>LÄSA</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>B</betyg>
+				<typ>TALA</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>B</betyg>
+				<typ>SKRIVA</typ>
+			</delprovsresultat>
+		</provtillfälle>
+	</kursresultat>
+
+	<kursresultat elev="{0c23677c-8ddc-11e5-8994-feff819cdc9f}" kurs="SFIKUB9">
+		<provtillfälle uppdaterat="2016-09-01">
+			<sammanvägtprovbetyg>A</sammanvägtprovbetyg>
+		</provtillfälle>
+		<provtillfälle uppdaterat="2016-09-02">
+			<sammanvägtprovbetyg>C</sammanvägtprovbetyg>
+			<delprovsresultat>
+				<betyg>C</betyg>
+				<typ>LÄSA</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>B</betyg>
+				<typ>TALA</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>E</betyg>
+				<typ>SKRIVA</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>A</betyg>
+				<typ>LYSSNA</typ>
+			</delprovsresultat>
+		</provtillfälle>
+	</kursresultat>
 
 </provresultat>
