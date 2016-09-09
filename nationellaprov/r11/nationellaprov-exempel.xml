@@ -5,7 +5,7 @@
 		 from="2016-09-01T00:00:00"
 		 tom="2015-09-02T20:00:00">
 
-	<ämnesresultat elev="{df324j43-3j13-to03-dfu8-fb0429mu39g8}" ämne="MA" årskurs="3">
+	<ämnesresultat elev="{df324j43-3j13-to03-dfu8-fb0429mu39g8}" ämne="MA" årskurs="3" skolform="GR">
 		<provtillfälle uppdaterat="2016-09-01">
 			<delprovsresultat>
 				<måluppfyllnad>true</måluppfyllnad>
@@ -42,7 +42,7 @@
 		</provtillfälle>
 	</ämnesresultat>
 
-	<ämnesresultat elev="{df324j43-3j13-to04-dfu8-fb0429mu39g8}" ämne="SV" årskurs="6">
+	<ämnesresultat elev="{df324j43-3j13-to04-dfu8-fb0429mu39g8}" ämne="SV" årskurs="6" skolform="GR">
 		<provtillfälle uppdaterat="2016-09-01">
 			<sammanvägtprovbetyg>B</sammanvägtprovbetyg>
 			<delprovsresultat>
@@ -60,7 +60,7 @@
 		</provtillfälle>
 	</ämnesresultat>
 
-	<ämnesresultat elev="{df324j43-3j13-to05-dfu8-fb0429mu39g8}" ämne="SV" årskurs="6">
+	<ämnesresultat elev="{df324j43-3j13-to05-dfu8-fb0429mu39g8}" ämne="SV" årskurs="6" skolform="GR">
 		<provtillfälle uppdaterat="2016-09-01">
 			<sammanvägtprovbetyg>B</sammanvägtprovbetyg>
 			<delprovsresultat>
@@ -93,13 +93,13 @@
 		</provtillfälle>
 	</ämnesresultat>
 
-	<kursresultat elev="{0c23677c-8ddc-12e5-8994-feff819cdc9f}" kurs="MATMAT01c">
+	<kursresultat elev="{0c23677c-8ddc-12e5-8994-feff819cdc9f}" kurs="MATMAT01c" skolform="GY">
 		<provtillfälle uppdaterat="2016-09-01">
 			<sammanvägtprovbetyg>F</sammanvägtprovbetyg>
 		</provtillfälle>
 	</kursresultat>
 
-	<kursresultat elev="{0c23677c-8ddc-12e5-8994-feff819cdc9f}" kurs="MATMAT01b">
+	<kursresultat elev="{0c23677c-8ddc-12e5-8994-feff819cdc9f}" kurs="MATMAT01b" skolform="GY">
 		<provtillfälle uppdaterat="2016-09-01">
 			<borttappat/>
 		</provtillfälle>
@@ -108,7 +108,7 @@
 		</provtillfälle>
 	</kursresultat>
 
-	<kursresultat elev="{0c23677c-8ddc-12e5-8994-feff819cdc9f}" kurs="SVASVA01">
+	<kursresultat elev="{0c23677c-8ddc-12e5-8994-feff819cdc9f}" kurs="SVASVA01" skolform="GY">
 		<provtillfälle uppdaterat="2016-09-01">
 			<sammanvägtprovbetyg>A</sammanvägtprovbetyg>
 			<delprovsresultat>
@@ -126,13 +126,13 @@
 		</provtillfälle>
 	</kursresultat>
 
-	<kursresultat elev="{0c23677c-8ddc-11e5-8994-feff819cdc9f}" kurs="MATMAT01a">
+	<kursresultat elev="{0c23677c-8ddc-11e5-8994-feff819cdc9f}" kurs="MATMAT01a" skolform="GY">
 		<provtillfälle uppdaterat="2016-09-01">
 			<sammanvägtprovbetyg>A</sammanvägtprovbetyg>
 		</provtillfälle>
 	</kursresultat>
 
-	<kursresultat elev="{0c23677c-8ddc-11e5-8994-feff819cdc9f}" kurs="SVESVE01">
+	<kursresultat elev="{0c23677c-8ddc-11e5-8994-feff819cdc9f}" kurs="SVESVE01" skolform="GY">
 		<provtillfälle uppdaterat="2016-09-01">
 			<sammanvägtprovbetyg>A</sammanvägtprovbetyg>
 			<delprovsresultat>
@@ -150,7 +150,7 @@
 		</provtillfälle>
 	</kursresultat>
 
-	<kursresultat elev="{0c23677c-8ddc-11e5-8994-feff819cdc9f}" kurs="SFIKUB9">
+	<kursresultat elev="{0c23677c-8ddc-11e5-8994-feff819cdc9f}" kurs="SFIKUB9" skolform="SFI">
 		<provtillfälle uppdaterat="2016-09-01">
 			<sammanvägtprovbetyg>A</sammanvägtprovbetyg>
 		</provtillfälle>

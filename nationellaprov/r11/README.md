@@ -47,8 +47,8 @@ HTTP-statuskoden vid korrekt användning är `200 OK` där response body är ett
 
 Ändringshistorik
 ----------------
-Nedan följer en beskrivning av de ändringar som gjorts till olika versioner av detta API:
-- 1.0 Första utkast.
-- 1.1 La till "from" och "tom" attribut till betyg-elementet som visar vilket tidsintervall som använts för att skapa xml:en.
-- 1.2 La till "poäng" för nationella prov som använder poäng istället för betyg (A-F). La till "typ" till delprovsbetyg för att visa vilken sorts delprov det är.
-- 1.3 Uppdatering och förbättringar av XML-schemat.
+- 2016-09-09: Tillägg av attributet skolform på `<ämnesresultat>` och `<kursresultat>`.
+- 2016-09-08: Uppdatering och förbättringar av XML-schemat.
+- 2016-04-01: La till "from" och "tom" attribut till betyg-elementet som visar vilket tidsintervall som använts för att skapa xml:en.
+- 2016-04-27: La till "poäng" för nationella prov som använder poäng istället för betyg (A-F). La till "typ" till delprovsbetyg för att visa vilken sorts delprov det är.
+- 2016-03-31: Första utkast.

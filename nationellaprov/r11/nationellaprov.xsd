@@ -16,6 +16,19 @@
 		</xs:complexType>
 	</xs:element>
 
+	<xs:simpleType name="Skolform">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="GR" />
+			<xs:enumeration value="GRSAR" />
+			<xs:enumeration value="GY" />
+			<xs:enumeration value="GYSAR" />
+			<xs:enumeration value="SFI" />
+			<xs:enumeration value="SARVUX" />
+			<xs:enumeration value="VUX" />
+			<xs:enumeration value="YH" />
+		</xs:restriction>
+	</xs:simpleType>
+
 	<xs:element name="ämnesresultat">
 		<xs:annotation><xs:documentation>Sammanställning av en persons provresultat inom ett provområde i ett grundskoleämne.</xs:documentation></xs:annotation>
 		<xs:complexType>
@@ -34,6 +47,7 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:attribute>
+			<xs:attribute name="skolform" type="Skolform" use="required"><xs:annotation><xs:documentation>Den skolform provet skrivits inom.</xs:documentation></xs:annotation></xs:attribute>
 		</xs:complexType>
 	</xs:element>
 
@@ -45,6 +59,7 @@
 			</xs:sequence>
 			<xs:attribute name="elev" type="xs:string" use="required"><xs:annotation><xs:documentation>Id för eleven resultatet är för (sourcedid/id från IMS).</xs:documentation></xs:annotation></xs:attribute>
 			<xs:attribute name="kurs" type="xs:string" use="required"><xs:annotation><xs:documentation>Kurskod för kursen vars sammanvägda provresultat erhålls.</xs:documentation></xs:annotation></xs:attribute>
+			<xs:attribute name="skolform" type="Skolform" use="required"><xs:annotation><xs:documentation>Den skolform provet skrivits inom.</xs:documentation></xs:annotation></xs:attribute>
 		</xs:complexType>
 	</xs:element>
 
