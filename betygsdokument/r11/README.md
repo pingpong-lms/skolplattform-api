@@ -38,7 +38,7 @@ HTTP-statuskoden vid korrekt användning är `200 OK` där response body är ett
 Ändringshistorik
 ----------------
 Nedan följer en beskrivning av de ändringar som gjorts till olika versioner av detta API:
-- r11 La till "from" och "tom" attribut till "betyg" elementet som visar vilka argument som skickades in för att skapa xml:en.
+- r11: La till "from" och "tom" attribut till "betyg" elementet som visar vilka argument som skickades in för att skapa xml:en.
 - r10d: Ta bort skapat datum, skicka enbart senaste utfärdade dokumentet av varje typ..
 - r10c: La till så att skapat datument skickas.
 - r10: La till information om hur APIet kan konsumeras.
