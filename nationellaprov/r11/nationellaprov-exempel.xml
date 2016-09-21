@@ -100,9 +100,6 @@
 	</kursresultat>
 
 	<kursresultat elev="{0c23677c-8ddc-12e5-8994-feff819cdc9f}" kurs="MATMAT01b" skolform="GY">
-		<provtillfälle uppdaterat="2016-09-01">
-			<borttappat/>
-		</provtillfälle>
 		<provtillfälle uppdaterat="2016-09-02">
 			<intedeltagit/>
 		</provtillfälle>

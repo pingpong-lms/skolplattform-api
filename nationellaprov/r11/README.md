@@ -47,6 +47,7 @@ HTTP-statuskoden vid korrekt användning är `200 OK` där response body är ett
 
 Ändringshistorik
 ----------------
+- 2016-09-21: Borttag av elementet borttag i `<provtillfälle>`.
 - 2016-09-09: Tillägg av attributet skolform på `<ämnesresultat>` och `<kursresultat>`.
 - 2016-09-08: Uppdatering och förbättringar av XML-schemat.
 - 2016-04-01: La till "from" och "tom" attribut till betyg-elementet som visar vilket tidsintervall som använts för att skapa xml:en.
