@@ -1,0 +1,53 @@
+<!DOCTYPE xml>
+<betygsdokument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                 xmlns="http://pingpong.se/schemas/betygsdokument/v1.0">
+
+	<!-- Slutbetyg utfärdat inom skolenheten Södervikskolan (skolenhetskod=49021135) -->
+	<dokument>
+		<elev>{78d4c490-708e-11e4-9803-0800200c9a66}</elev>
+		<utfärdat>2014-12-18</utfärdat>
+		<skola>{30c5fd03-075a-48aa-a599-3211bfaa418b}</skola>
+		<skolenhetskod>44412461</skolenhetskod>
+		<typ>GR_SLUTBETYG</typ>
+		<ämnen>
+			<ämne>
+				<förkortning>ML</förkortning>
+				<språk>TIR</språk>
+			</ämne>
+			<ämne>
+				<förkortning>HKK</förkortning>
+			</ämne>
+		</ämnen>
+	</dokument>
+
+	<!-- Examensbevis utfärdat inom skolenheten Östra gymnasiet (skolenhetskod=99592025) -->
+	<dokument>
+		<elev>{78d4c490-708e-11e4-9803-0800200c9a66}</elev>
+		<studievägskod>NATNAT</studievägskod>
+		<utfärdat>2014-12-19</utfärdat>
+		<skola>{d0566f23-20d0-4bc1-9865-c8844cf00944}</skola>
+		<skolenhetskod>99592025</skolenhetskod>
+		<typ>GY_EXAMENSBEVIS_HOGSKOLEFORBEREDANDE</typ>
+		<kurser>
+			<kurs>GYARES</kurs>
+			<kurs>MODFRE01</kurs>
+		</kurser>
+	</dokument>
+
+	<!-- Yrkesförberedande examensbevis med grundläggande behörighet utfärdat inom skolenheten Östra gymnasiet (skolenhetskod=99592025) -->
+	<dokument>
+		<elev>{78d4c490-708e-11e4-9803-0800200c9a66}</elev>
+		<studievägskod>NATNAT</studievägskod>
+		<utfärdat>2014-12-19</utfärdat>
+		<skola>{d0566f23-20d0-4bc1-9865-c8844cf00944}</skola>
+		<skolenhetskod>99592025</skolenhetskod>
+		<typ>GY_EXAMENSBEVIS_YRKESFORBEREDANDE</typ>
+		<grundläggandebehörighet>true</grundläggandebehörighet>
+		<kurser>
+			<kurs>GYARES</kurs>
+			<kurs>MODFRE01</kurs>
+		</kurser>
+	</dokument>
+
+</betygsdokument>
