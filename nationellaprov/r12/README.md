@@ -47,6 +47,7 @@ HTTP-statuskoden vid korrekt användning är `200 OK` där response body är ett
 
 Ändringshistorik
 ----------------
+- 2017-01-20: Uppdaterade namespace; v1.1 -> v1.2.
 - 2016-12-14: Utökad enumerering av delprovs `<typ>`.
 - 2016-09-21: Borttag av elementet borttag i `<provtillfälle>`.
 - 2016-09-09: Tillägg av attributet skolform på `<ämnesresultat>` och `<kursresultat>`.

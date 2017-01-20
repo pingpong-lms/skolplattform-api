@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <provresultat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-                 xmlns="http://pingpong.se/schemas/nationellaprov/v1.1"
+                 xmlns="http://pingpong.se/schemas/nationellaprov/v1.2"
 		 from="2016-09-01T00:00:00"
 		 tom="2015-09-02T20:00:00">
 
