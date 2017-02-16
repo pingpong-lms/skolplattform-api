@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://pingpong.se/schemas/betygsdokument/v2.0"
+           xmlns="http://pingpong.se/schemas/betygsdokument/v2.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	   elementFormDefault="qualified">
+
+	<xs:element name="betygsdokument">
+		<xs:annotation><xs:documentation>En lista av utfärdade betygsreslaterade dokument. Rotelement för dokumentet.</xs:documentation></xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="dokument" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="from" type="xs:dateTime" use="required" />
+       			<xs:attribute name="tom" type="xs:dateTime" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="dokument">
+		<xs:annotation><xs:documentation>Ett utfärdat betygsrelaterat dokument.</xs:documentation></xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="elev" type="xs:string">
+					<xs:annotation><xs:documentation>Identifierare för den elev utgångsdokumentet utfärdats för (sourcedid/id i IMS).</xs:documentation></xs:annotation>
+				</xs:element>
+				<xs:element name="studievägskod" type="xs:string" minOccurs="0">
+					<xs:annotation><xs:documentation>Studievägskoden som angivits på dokumentet.</xs:documentation></xs:annotation>
+				</xs:element>
+				<xs:element name="utfärdat" type="xs:date">
+					<xs:annotation><xs:documentation>Det datum dokumentet utfärdats.</xs:documentation></xs:annotation>
+				</xs:element>
+				<xs:element name="skola" type="xs:string">
+					<xs:annotation><xs:documentation>Identifierare för den skolgruppen där dokumentet utfärdats (sourcedid/id i IMS).</xs:documentation></xs:annotation>
+				</xs:element>
+				<xs:element name="skolenhetskod">
+					<xs:annotation><xs:documentation>Skolenhetskoden för den skolenhet som utfärdade dokumentet.</xs:documentation></xs:annotation>
+					<xs:simpleType><xs:restriction base="xs:integer"><xs:pattern value="[0-9]{8}" /></xs:restriction></xs:simpleType>
+				</xs:element>
+				<xs:element name="typ" type="DokumentTyp" />
+				<xs:element name="grundläggandebehörighet" type="xs:boolean" minOccurs="0">
+					<xs:annotation><xs:documentation>Om examen ger grundläggande behörighet. Finns endast för yrkesexamen-dokument.</xs:documentation></xs:annotation>
+				</xs:element>
+				<xs:element name="ämnen" minOccurs="0">
+					<xs:annotation><xs:documentation>De ämnen som är associerade med betygen som finns på dokumentet.</xs:documentation></xs:annotation>
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="ämne">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="förkortning" type="xs:string"/>
+										<xs:element name="språk" minOccurs="0" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="kurser" minOccurs="0">
+					<xs:annotation><xs:documentation>De kurser som är associerade med betygen som finns på dokumentet.</xs:documentation></xs:annotation>
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="kurs" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:simpleType name="DokumentTyp">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="GR_SLUTBETYG"><xs:annotation><xs:documentation>Slutbetyg för grundskolan utfärdat inom grundskolan.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="GR_TERMINSBETYG"><xs:annotation><xs:documentation>Terminsbetyg för grundskolan utfärdat inom grundskolan.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="GRSAR_SLUTBETYG"><xs:annotation><xs:documentation>Slutbetyg för grundsärskolanskolan utfärdat inom grundsärskolan.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="GRSAR_TERMINSBETYG"><xs:annotation><xs:documentation>Terminsbetyg för grundsärskolanskolan utfärdat inom grundsärskolanskolan.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="GY_EXAMENSBEVIS_HOGSKOLEFORBEREDANDE"><xs:annotation><xs:documentation>Högskoleförberedande examen för gymnasieskolan utfärdat inom gymnasieskolan.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="GY_EXAMENSBEVIS_INGENJOR"><xs:annotation><xs:documentation>Gymnasieingenjörsexamen utfärdat inom gymnasieskolan.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="GY_EXAMENSBEVIS_YRKESFORBEREDANDE"><xs:annotation><xs:documentation>Examenbevis - yrkesexamen för gymnasieskola utfärdat inom gymnasieskolan.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="GY_GYMNASIEINTYG"><xs:annotation><xs:documentation>Gymnasieintyg utfärdat inom gymnasieskolan.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="GY_SLUTBETYG"><xs:annotation><xs:documentation>Slutbetyg för grundskolan utfärdat inom gymnasieskolan.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="GY_STUDIEBEVIS"><xs:annotation><xs:documentation>Studiebevis för gymnasieskolan utfärdat inom gymnasieskolan.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="GYSAR02_SLUTBETYG"><xs:annotation><xs:documentation>Slutbetyg för gymnasiesärskolan, 2002 års läroplan, utfärdat inom gymnasiesärskolan.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="GYSAR_STUDIEBEVIS_FOR_INDIVIDUELLT"><xs:annotation><xs:documentation>Gymnasiesärskolebevis för individuellt program utfärdat inom gymnasiesärskolan.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="GYSAR_STUDIEBEVIS_FOR_NATIONELLT"><xs:annotation><xs:documentation>Gymnasiesärskolebevis för nationellt program utfärdat inom gymnasiesärskolan.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="SFI_BETYG"><xs:annotation><xs:documentation>Betyg för svenska för invandrare (SFI) utfärdat inom svenska för invandrare.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="SFI_KUNSKAPSINTYG"><xs:annotation><xs:documentation>Kunskapsintyg för svenska för invandrare (SFI) utfärdat inom svenska för invandrare.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="VUX_EXAMENSBEVIS_HOGSKOLEFORBEREDANDE"><xs:annotation><xs:documentation>Högskoleförberedande examen för gymnasieskolan utfärdat inom kommunal vuxenutbildning.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="VUX_EXAMENSBEVIS_YRKESFORBEREDANDE"><xs:annotation><xs:documentation>Examenbevis - yrkesexamen för gymnasieskola utfärdat inom kommunal vuxenutbildning.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="VUX_KUNSKAPSINTYG"><xs:annotation><xs:documentation>Kunskapsintyg för kommunal vuxenutbildning utfärdat inom kommunal vuxenutbildning.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="VUX_SLUTBETYG"><xs:annotation><xs:documentation>Slutbetyg för grundskolan utfärdat inom kommunal vuxenutbildning.</xs:documentation></xs:annotation></xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>
