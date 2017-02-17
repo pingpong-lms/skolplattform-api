@@ -87,6 +87,7 @@
 			<xs:enumeration value="VUX_EXAMENSBEVIS_YRKESFORBEREDANDE"><xs:annotation><xs:documentation>Examenbevis - yrkesexamen för gymnasieskola utfärdat inom kommunal vuxenutbildning.</xs:documentation></xs:annotation></xs:enumeration>
 			<xs:enumeration value="VUX_KUNSKAPSINTYG"><xs:annotation><xs:documentation>Kunskapsintyg för kommunal vuxenutbildning utfärdat inom kommunal vuxenutbildning.</xs:documentation></xs:annotation></xs:enumeration>
 			<xs:enumeration value="VUX_SLUTBETYG"><xs:annotation><xs:documentation>Slutbetyg för grundskolan utfärdat inom kommunal vuxenutbildning.</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="VUX_SLUTBETYG_GY"><xs:annotation><xs:documentation>Slutbetyg för gymnasieskolan utfärdat inom kommunal vuxenutbildning.</xs:documentation></xs:annotation></xs:enumeration>
 		</xs:restriction>
 	</xs:simpleType>
 
