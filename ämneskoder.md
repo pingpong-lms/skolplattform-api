@@ -2,8 +2,8 @@ Grundskoleämnen
 ===============
 I de fall där elevdokumentation skickar ut information om ämnen i grundskoleutbildning används följande koder:
 
-             Ämne              | Kod
--------------------------------+-------
+Ämne                           | Kod
+-------------------------------|-------
  Biologi                       | BI
  Bild                          | BL
  Förberedande dansarutbildning | DA
@@ -35,7 +35,7 @@ Språkkoder
 I tabellen ovan står `XXX` för en språkkod antingen från [skolverkets nuvarande lista över språkkoder](https://www.skolverket.se/om-skolverket/publikationer/visa-enskild-publikation?_xurl_=http%3A%2F%2Fwww5.skolverket.se%2Fwtpub%2Fws%2Fskolbok%2Fwpubext%2Ftrycksak%2FBlob%2Fpdf3343.pdf%3Fk%3D3343), eller med följande språkkoder tillagda för bakåtkompatibilitet:
 
 Språk     | Kod
-----------+-----
+----------|-----
 Tyska     | GER
 Franska   | FRE
 Persiska  | PER
