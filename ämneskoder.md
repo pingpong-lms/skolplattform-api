@@ -36,9 +36,9 @@ I tabellen ovan står `XXX` för en språkkod antingen från [skolverkets nuvara
 
 Språk     | Kod
 ----------|-----
-Tyska     | GER
-Franska   | FRE
-Persiska  | PER
-Kinesiska | CHI
 Armeniska | ARM
+Franska   | FRE
+Kinesiska | CHI
+Persiska  | PER
 Rumänska  | RUM
+Tyska     | GER
