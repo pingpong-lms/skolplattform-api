@@ -81,8 +81,6 @@
 			<xs:enumeration value="GYSAR02_SLUTBETYG"><xs:annotation><xs:documentation>Slutbetyg för gymnasiesärskolan, 2002 års läroplan, utfärdat inom gymnasiesärskolan.</xs:documentation></xs:annotation></xs:enumeration>
 			<xs:enumeration value="GYSAR_STUDIEBEVIS_FOR_INDIVIDUELLT"><xs:annotation><xs:documentation>Gymnasiesärskolebevis för individuellt program utfärdat inom gymnasiesärskolan.</xs:documentation></xs:annotation></xs:enumeration>
 			<xs:enumeration value="GYSAR_STUDIEBEVIS_FOR_NATIONELLT"><xs:annotation><xs:documentation>Gymnasiesärskolebevis för nationellt program utfärdat inom gymnasiesärskolan.</xs:documentation></xs:annotation></xs:enumeration>
-			<xs:enumeration value="SFI_BETYG"><xs:annotation><xs:documentation>Betyg för svenska för invandrare (SFI) utfärdat inom svenska för invandrare.</xs:documentation></xs:annotation></xs:enumeration>
-			<xs:enumeration value="SFI_KUNSKAPSINTYG"><xs:annotation><xs:documentation>Kunskapsintyg för svenska för invandrare (SFI) utfärdat inom svenska för invandrare.</xs:documentation></xs:annotation></xs:enumeration>
 			<xs:enumeration value="VUX_EXAMENSBEVIS_HOGSKOLEFORBEREDANDE"><xs:annotation><xs:documentation>Högskoleförberedande examen för gymnasieskolan utfärdat inom kommunal vuxenutbildning.</xs:documentation></xs:annotation></xs:enumeration>
 			<xs:enumeration value="VUX_EXAMENSBEVIS_YRKESFORBEREDANDE"><xs:annotation><xs:documentation>Examenbevis - yrkesexamen för gymnasieskola utfärdat inom kommunal vuxenutbildning.</xs:documentation></xs:annotation></xs:enumeration>
 			<xs:enumeration value="VUX_KUNSKAPSINTYG"><xs:annotation><xs:documentation>Kunskapsintyg för kommunal vuxenutbildning utfärdat inom kommunal vuxenutbildning.</xs:documentation></xs:annotation></xs:enumeration>
