@@ -1,6 +1,6 @@
 Grundskoleämnen
 ===============
-I de fall där elevdokumentation skickar ut information om ämnen i grundskoleutbildning används följande koder:
+I de fall där elevdokumentation skickar ut information om ämnen i grundskoleutbildning används följande koder, tagna från [Skolverkets föreskrifter om betygskatalog](https://www.skolverket.se/regelverk/skolfs/skolfs?_xurl_=http%3A%2F%2Fwww5.skolverket.se%2Fwtpub%2Fws%2Fskolfs%2Fwpubext%2Ffs%2FRecord%3Fk%3D2263):
 
 Ämne                           | Kod
 -------------------------------|-------
