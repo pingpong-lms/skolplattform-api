@@ -39,6 +39,8 @@ Språk     | Kod
 Armeniska | ARM
 Franska   | FRE
 Kinesiska | CHI
+Kurdiska  | KUR
 Persiska  | PER
+Romani    | ROM
 Rumänska  | RUM
 Tyska     | GER
