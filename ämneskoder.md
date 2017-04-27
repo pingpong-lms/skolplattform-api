@@ -2,33 +2,33 @@ Grundskoleämnen
 ===============
 I de fall där elevdokumentation skickar ut information om ämnen i grundskoleutbildning används följande koder, tagna från [Skolverkets föreskrifter om betygskatalog](https://www.skolverket.se/regelverk/skolfs/skolfs?_xurl_=http%3A%2F%2Fwww5.skolverket.se%2Fwtpub%2Fws%2Fskolfs%2Fwpubext%2Ffs%2FRecord%3Fk%3D2263):
 
-Ämne                           | Kod
--------------------------------|-------
- Biologi                       | BI
- Bild                          | BL
- Förberedande dansarutbildning | DA
- Engelska                      | EN
- Fysik                         | FY
- Geografi                      | GE
- Historia                      | HI
- Hem- och konsumentkunskap     | HKK
- Idrott och hälsa              | IDH
- Judiska studier               | JU
- Kemi                          | KE
- Moderna språk - elevens val   | M1 XXX
- Moderna språk - språkval      | M2 XXX
- Matematik                     | MA
- Modersmål                     | ML XXX
- Musik                         | MU
- Naturorienterande ämnen       | NO
- Religionskunskap              | RE
- Samhällskunskap               | SH
- Slöjd                         | SL
- Samhällsorienterande ämnen    | SO
- Svenska                       | SV
- Svenska som andraspråk        | SVA
- Teknik                        | TK
- Teckenspråk för hörande       | TN
+Ämne                           | Kod    | Uppdaterad kod enligt förslag (om ändrat)
+-------------------------------|--------|-----------------------------------------
+ Biologi                       | BI     |
+ Bild                          | BL     |
+ Förberedande dansarutbildning | DA     |
+ Engelska                      | EN     |
+ Fysik                         | FY     |
+ Geografi                      | GE     |
+ Historia                      | HI     |
+ Hem- och konsumentkunskap     | HKK    |
+ Idrott och hälsa              | IDH    |
+ Judiska studier               | JU     |
+ Kemi                          | KE     |
+ Moderna språk - elevens val   | M1 XXX | M1XXX
+ Moderna språk - språkval      | M2 XXX | M2XXX
+ Matematik                     | MA     |
+ Modersmål                     | ML XXX | MLXXX
+ Musik                         | MU     |
+ Naturorienterande ämnen       | NO     |
+ Religionskunskap              | RE     |
+ Samhällskunskap               | SH     |
+ Slöjd                         | SL     |
+ Samhällsorienterande ämnen    | SO     |
+ Svenska                       | SV     |
+ Svenska som andraspråk        | SVA    |
+ Teknik                        | TK     |
+ Teckenspråk för hörande       | TN     |
 
 Språkkoder
 ----------
