@@ -8,6 +8,7 @@ I de fall där elevdokumentation skickar ut information om ämnen i grundskoleut
  Bild                          | BL
  Förberedande dansarutbildning | DA
  Engelska                      | EN
+ Estetisk verksamhetet*        | ES
  Fysik                         | FY
  Geografi                      | GE
  Historia                      | HI
@@ -15,10 +16,12 @@ I de fall där elevdokumentation skickar ut information om ämnen i grundskoleut
  Idrott och hälsa              | IDH
  Judiska studier               | JU
  Kemi                          | KE
+ Kommunikation*                | KOM
  Moderna språk - elevens val   | M1XXX
  Moderna språk - språkval      | M2XXX
  Matematik                     | MA
  Modersmål                     | MLXXX
+ Motorik*                      | MOT
  Musik                         | MU
  Naturorienterande ämnen       | NO
  Religionskunskap              | RE
@@ -29,6 +32,9 @@ I de fall där elevdokumentation skickar ut information om ämnen i grundskoleut
  Svenska som andraspråk        | SVA
  Teknik                        | TK
  Teckenspråk för hörande       | TN
+ Vardagsaktiviteter*           | VAA
+ Verklighetsuppfattning*       | VEU
+* indikerar grundsärskoleämne som ej betygsätts
 
 Språkkoder
 ----------
