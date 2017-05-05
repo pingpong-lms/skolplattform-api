@@ -1,13 +1,13 @@
-<!DOCTYPE xml>
+<?xml version="1.0" encoding="UTF-8" ?>
 <betyg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-                 xmlns="http://pingpong.se/schemas/grades/v1.1"
-		 from="2014-12-17T09:00:00"
-		 tom="2015-12-19T09:00:00">
-    
+       xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+       xmlns="http://pingpong.se/schemas/grades/v1.1"
+       from="2014-12-17T09:00:00"
+       tom="2015-12-19T09:00:00">
+
 	<elev id="{d7b3374b-985a-4d43-9558-189e6643755a}">
-	    <!-- Gymnasieskurs: Reparation av motorcyklar och ATV -->
-	    <kursbetyg>
+		<!-- Gymnasieskurs: Reparation av motorcyklar och ATV -->
+		<kursbetyg>
 			<value>A</value>
 			<datum>2014-12-17</datum>
 			<prövning>false</prövning>
@@ -16,9 +16,9 @@
 			<skolform>GY</skolform>
 			<kurskod>ATVREP0</kurskod>
 			<omdöme>false</omdöme>
-	    </kursbetyg>
+		</kursbetyg>
 
-	    <!-- Gymnasieskurs: Moderna språk 2 -->
+		<!-- Gymnasieskurs: Moderna språk 2 -->
 		<kursbetyg>
 			<value>B</value>
 			<datum>2014-12-19</datum>
@@ -35,8 +35,8 @@
 	</elev>
 
 	<elev id="{7b080db7-1591-4c67-94d6-28adfcf52396}">
-	    <!-- Grundskoleämne: Modersmål, tyska (läst inom gymnasieskolan, så saknar termin) -->
-	    <ämnesbetyg>
+		<!-- Grundskoleämne: Modersmål, tyska (läst inom gymnasieskolan, så saknar termin) -->
+		<ämnesbetyg>
 			<value>E</value>
 			<datum>2014-12-17</datum>
 			<prövning>false</prövning>
@@ -45,13 +45,13 @@
 				<person>{96ab211c-4937-49e3-8fdc-e144447c2138}</person>
 			</beslutsfattare>
 			<skolform>GR</skolform>
-			<ämnesförkortning>GRGRMOD01</ämnesförkortning>
+			<ämnesförkortning>MLDEU</ämnesförkortning>
 			<språk>DEU</språk>
 			<slutbetyg>true</slutbetyg>
 		</ämnesbetyg>
 
 		<!-- Gymnasiearbete i Barn- och fritidsprogrammet -->
-	    <kursbetyg>
+		<kursbetyg>
 			<value>E</value>
 			<datum>2014-12-17</datum>
 			<prövning>false</prövning>
@@ -62,12 +62,12 @@
 			<skolform>GR</skolform>
 			<kurskod>GYARBF</kurskod>
 			<omdöme>false</omdöme>
-	    </kursbetyg>
+		</kursbetyg>
 	</elev>
 
 	<elev id="{96ab211c-4937-49e3-8fdc-e144447c2138}">
-	    <!-- Grundskoleämne: Kemi -->
-	    <ämnesbetyg>
+		<!-- Grundskoleämne: Kemi -->
+		<ämnesbetyg>
 			<value>E</value>
 			<datum>2014-12-17</datum>
 			<prövning>false</prövning>
@@ -77,10 +77,10 @@
 			<ämnesförkortning>KE</ämnesförkortning>
 			<termin><typ>HT</typ><år>2014</år></termin>
 			<slutbetyg>true</slutbetyg>
-	    </ämnesbetyg>
+		</ämnesbetyg>
 
-	    <!-- Grundskoleämne: Modersmål, tyska, två betygsättande lärare -->
-	    <ämnesbetyg>
+		<!-- Grundskoleämne: Modersmål, tyska, två betygsättande lärare -->
+		<ämnesbetyg>
 			<value>E</value>
 			<datum>2015-05-17</datum>
 			<prövning>false</prövning>
@@ -90,14 +90,14 @@
 				<person>{56772461-ccd3-47f8-8d2c-c097675b2af7}</person>
 			</beslutsfattare>
 			<skolform>GR</skolform>
-			<ämnesförkortning>ML</ämnesförkortning>
+			<ämnesförkortning>MLDEU</ämnesförkortning>
 			<språk>DEU</språk>
 			<termin><typ>VT</typ><år>2015</år></termin>
 			<slutbetyg>true</slutbetyg>
 		</ämnesbetyg>
 
-	    <!-- Grundskoleämne: Moderna språk (språkval), tyska, en betygsättande lärare -->
-	    <ämnesbetyg>
+		<!-- Grundskoleämne: Moderna språk (språkval), tyska, en betygsättande lärare -->
+		<ämnesbetyg>
 			<value>E</value>
 			<datum>2014-12-17</datum>
 			<prövning>false</prövning>
