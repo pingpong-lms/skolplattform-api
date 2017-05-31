@@ -5,24 +5,6 @@
 		 from="2014-12-17T09:00:00"
 		 tom="2014-12-19T09:00:00">
 
-	<!-- Slutbetyg utfärdat inom skolenheten Södervikskolan (skolenhetskod=49021135) -->
-	<dokument>
-		<elev>{78d4c490-708e-11e4-9803-0800200c9a66}</elev>
-		<utfärdat>2014-12-18</utfärdat>
-		<skola>{30c5fd03-075a-48aa-a599-3211bfaa418b}</skola>
-		<skolenhetskod>44412461</skolenhetskod>
-		<typ>GR_SLUTBETYG</typ>
-		<ämnen>
-			<ämne>
-				<förkortning>ML</förkortning>
-				<språk>TIR</språk>
-			</ämne>
-			<ämne>
-				<förkortning>HKK</förkortning>
-			</ämne>
-		</ämnen>
-	</dokument>
-
 	<!-- Examensbevis utfärdat inom skolenheten Östra gymnasiet (skolenhetskod=99592025) -->
 	<dokument>
 		<elev>{78d4c490-708e-11e4-9803-0800200c9a66}</elev>

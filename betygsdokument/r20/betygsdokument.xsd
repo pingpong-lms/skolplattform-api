@@ -68,10 +68,6 @@
 
 	<xs:simpleType name="DokumentTyp">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="GR_SLUTBETYG"><xs:annotation><xs:documentation>Slutbetyg för grundskolan utfärdat inom grundskolan.</xs:documentation></xs:annotation></xs:enumeration>
-			<xs:enumeration value="GR_TERMINSBETYG"><xs:annotation><xs:documentation>Terminsbetyg för grundskolan utfärdat inom grundskolan.</xs:documentation></xs:annotation></xs:enumeration>
-			<xs:enumeration value="GRSAR_SLUTBETYG"><xs:annotation><xs:documentation>Slutbetyg för grundsärskolanskolan utfärdat inom grundsärskolan.</xs:documentation></xs:annotation></xs:enumeration>
-			<xs:enumeration value="GRSAR_TERMINSBETYG"><xs:annotation><xs:documentation>Terminsbetyg för grundsärskolanskolan utfärdat inom grundsärskolanskolan.</xs:documentation></xs:annotation></xs:enumeration>
 			<xs:enumeration value="GY_EXAMENSBEVIS_HOGSKOLEFORBEREDANDE"><xs:annotation><xs:documentation>Högskoleförberedande examen för gymnasieskolan utfärdat inom gymnasieskolan.</xs:documentation></xs:annotation></xs:enumeration>
 			<xs:enumeration value="GY_EXAMENSBEVIS_INGENJOR"><xs:annotation><xs:documentation>Gymnasieingenjörsexamen utfärdat inom gymnasieskolan.</xs:documentation></xs:annotation></xs:enumeration>
 			<xs:enumeration value="GY_EXAMENSBEVIS_YRKESFORBEREDANDE"><xs:annotation><xs:documentation>Examenbevis - yrkesexamen för gymnasieskola utfärdat inom gymnasieskolan.</xs:documentation></xs:annotation></xs:enumeration>
