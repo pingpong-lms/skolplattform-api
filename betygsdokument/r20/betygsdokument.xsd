@@ -39,7 +39,22 @@
 				<xs:element name="grundläggandebehörighet" type="xs:boolean" minOccurs="0">
 					<xs:annotation><xs:documentation>Om examen ger grundläggande behörighet. Finns endast för yrkesexamen-dokument.</xs:documentation></xs:annotation>
 				</xs:element>
-				<xs:element name="kurser">
+				<xs:element name="ämnen" minOccurs="0">
+					<xs:annotation><xs:documentation>De ämnen som är associerade med betygen som finns på dokumentet.</xs:documentation></xs:annotation>
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="ämne">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="förkortning" type="xs:string"/>
+										<xs:element name="språk" minOccurs="0" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="kurser" minOccurs="0">
 					<xs:annotation><xs:documentation>De kurser som är associerade med betygen som finns på dokumentet.</xs:documentation></xs:annotation>
 					<xs:complexType>
 						<xs:sequence maxOccurs="unbounded">
