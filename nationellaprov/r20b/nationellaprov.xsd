@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://pingpong.se/schemas/nationellaprov/v1.2"
+	   xmlns="http://pingpong.se/schemas/nationellaprov/v1.2"
+	   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	   elementFormDefault="qualified">
+
+	<xs:element name="provresultat">
+		<xs:annotation><xs:documentation>Lista av ämnesresultat och kursresultat inom ett provområde. Rotelement för dokumentet.</xs:documentation></xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ämnesresultat" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="kursresultat" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="from" type="xs:dateTime" use="required"/>
+			<xs:attribute name="tom" type="xs:dateTime" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:simpleType name="Skolform">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="GR" />
+			<xs:enumeration value="GRSAR" />
+			<xs:enumeration value="GY" />
+			<xs:enumeration value="GYSAR" />
+			<xs:enumeration value="SFI" />
+			<xs:enumeration value="SARVUX" />
+			<xs:enumeration value="VUX" />
+			<xs:enumeration value="YH" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="ämnesresultat">
+		<xs:annotation><xs:documentation>Sammanställning av en persons provresultat inom ett provområde i ett grundskoleämne.</xs:documentation></xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="provtillfälle" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="elev" type="xs:string" use="required"><xs:annotation><xs:documentation>Id för eleven resultatet är för (sourcedid/id från IMS).</xs:documentation></xs:annotation></xs:attribute>
+			<xs:attribute name="ämne" type="xs:string" use="required"><xs:annotation><xs:documentation>Förkortningen på grundskoleämnet provbetyget är för.</xs:documentation></xs:annotation></xs:attribute>
+			<xs:attribute name="årskurs" use="required">
+				<xs:annotation><xs:documentation>Den årskurs det nationella provet genomförts i.</xs:documentation></xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:positiveInteger">
+						<xs:enumeration value="3"/>
+						<xs:enumeration value="6"/>
+						<xs:enumeration value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="skolform" type="Skolform" use="required"><xs:annotation><xs:documentation>Den skolform provet skrivits inom.</xs:documentation></xs:annotation></xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="kursresultat">
+		<xs:annotation><xs:documentation>Sammanställning av en persons provresultat inom ett provområde i en kurs.</xs:documentation></xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="provtillfälle" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="elev" type="xs:string" use="required"><xs:annotation><xs:documentation>Id för eleven resultatet är för (sourcedid/id från IMS).</xs:documentation></xs:annotation></xs:attribute>
+			<xs:attribute name="kurs" type="xs:string" use="required"><xs:annotation><xs:documentation>Kurskod för kursen vars sammanvägda provresultat erhålls.</xs:documentation></xs:annotation></xs:attribute>
+			<xs:attribute name="skolform" type="Skolform" use="required"><xs:annotation><xs:documentation>Den skolform provet skrivits inom.</xs:documentation></xs:annotation></xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="provtillfälle">
+		<xs:annotation><xs:documentation>Sammanställning av en persons provbetyget i ett provtillfälle.</xs:documentation></xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence>
+					<xs:element ref="sammanvägtprovbetyg" minOccurs="0"/>
+					<xs:element ref="delprovsresultat" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:element name="intedeltagit">
+					<xs:annotation><xs:documentation>Eleven borde genomfört provet men avvek.</xs:documentation></xs:annotation>
+					<xs:complexType/>
+				</xs:element>
+			</xs:choice>
+			<xs:attribute name="uppdaterat" type="xs:date" use="required"><xs:annotation><xs:documentation>Det datum då information om provtillfället senast uppdaterades.</xs:documentation></xs:annotation></xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="sammanvägtprovbetyg">
+		<xs:simpleType><xs:restriction base="xs:string">
+			<xs:enumeration value="A"/>
+			<xs:enumeration value="B"/>
+			<xs:enumeration value="C"/>
+			<xs:enumeration value="D"/>
+			<xs:enumeration value="E"/>
+			<xs:enumeration value="F"/>
+		</xs:restriction></xs:simpleType>
+	</xs:element>
+
+	<xs:element name="delprovsresultat">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+					<xs:sequence>
+						<xs:choice minOccurs="0">
+							<xs:element name="betyg">
+								<xs:simpleType><xs:restriction base="xs:string">
+									<xs:enumeration value="A"/>
+									<xs:enumeration value="B"/>
+									<xs:enumeration value="C"/>
+									<xs:enumeration value="D"/>
+									<xs:enumeration value="E"/>
+									<xs:enumeration value="F"/>
+								</xs:restriction></xs:simpleType>
+							</xs:element>
+							<xs:element name="poäng" type="xs:integer"/>
+						</xs:choice>
+						<xs:element name="måluppfyllnad" type="xs:boolean" minOccurs="0"/>
+					</xs:sequence>
+					<xs:element name="intedeltagit"><xs:complexType/></xs:element>
+					<xs:element name="borttappat"><xs:complexType/></xs:element>
+				</xs:choice>
+				<xs:element name="typ">
+					<xs:simpleType><xs:restriction base="xs:string">
+						<xs:enumeration value="LÄSA"/>
+						<xs:enumeration value="TALA"/>
+						<xs:enumeration value="SKRIVA"/>
+						<xs:enumeration value="LYSSNA"/>
+                                                <xs:enumeration value="A"/>
+                                                <xs:enumeration value="B"/>
+                                                <xs:enumeration value="C"/>
+                                                <xs:enumeration value="D"/>
+                                                <xs:enumeration value="E"/>
+                                                <xs:enumeration value="F"/>
+                                                <xs:enumeration value="G"/>
+                                                <xs:enumeration value="H"/>
+					</xs:restriction></xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
