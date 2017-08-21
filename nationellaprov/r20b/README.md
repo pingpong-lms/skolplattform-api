@@ -1,4 +1,4 @@
-Nationella prov API, version 1.2
+Nationella prov API, version r2.0b
 ================================
 Via detta API kan information om elevers provresultat på nationella prov erhållas.
 
@@ -16,6 +16,7 @@ Vanligast är att en elev erhåller endast ett nationellt provresultat inom ett 
 För varje elev med uppdaterat information inom provområdet erhålls följande information:
 
 - Identifierare för den elev vars provresultat ändrats.
+- Det datum då provtillfället genomfördes. Behöver inte finnas för alla provtillfällen.
 - Det datum då informationen om provresultat senast uppdaterades.
 - Provområde: grundskoleämne och årskurs i grundskolan, kurs för övriga skolformer.
 - En lista av provtillfällen inom provområdet, där varje provtillfälle innehåller:
@@ -47,6 +48,7 @@ HTTP-statuskoden vid korrekt användning är `200 OK` där response body är ett
 
 Ändringshistorik
 ----------------
+- 2017-08-21: Lade till attributet genomfört på `<provtillfälle>`.
 - 2017-01-20: Uppdaterade namespace; v1.1 -> v1.2.
 - 2016-12-14: Utökad enumerering av delprovs `<typ>`.
 - 2016-09-21: Borttag av elementet borttag i `<provtillfälle>`.

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema targetNamespace="http://pingpong.se/schemas/nationellaprov/v1.2"
-	   xmlns="http://pingpong.se/schemas/nationellaprov/v1.2"
+<xs:schema targetNamespace="http://pingpong.se/schemas/nationellaprov/v2.0b"
+	   xmlns="http://pingpong.se/schemas/nationellaprov/v2.0b"
 	   xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	   elementFormDefault="qualified">
 
@@ -76,6 +76,7 @@
 					<xs:complexType/>
 				</xs:element>
 			</xs:choice>
+			<xs:attribute name="genomfört" type="xs:date"><xs:annotation><xs:documentation>Det datum då provtillfället genomfördes.</xs:documentation></xs:annotation></xs:attribute>
 			<xs:attribute name="uppdaterat" type="xs:date" use="required"><xs:annotation><xs:documentation>Det datum då information om provtillfället senast uppdaterades.</xs:documentation></xs:annotation></xs:attribute>
 		</xs:complexType>
 	</xs:element>
@@ -120,14 +121,14 @@
 						<xs:enumeration value="TALA"/>
 						<xs:enumeration value="SKRIVA"/>
 						<xs:enumeration value="LYSSNA"/>
-                                                <xs:enumeration value="A"/>
-                                                <xs:enumeration value="B"/>
-                                                <xs:enumeration value="C"/>
-                                                <xs:enumeration value="D"/>
-                                                <xs:enumeration value="E"/>
-                                                <xs:enumeration value="F"/>
-                                                <xs:enumeration value="G"/>
-                                                <xs:enumeration value="H"/>
+						<xs:enumeration value="A"/>
+						<xs:enumeration value="B"/>
+						<xs:enumeration value="C"/>
+						<xs:enumeration value="D"/>
+						<xs:enumeration value="E"/>
+						<xs:enumeration value="F"/>
+						<xs:enumeration value="G"/>
+						<xs:enumeration value="H"/>
 					</xs:restriction></xs:simpleType>
 				</xs:element>
 			</xs:sequence>

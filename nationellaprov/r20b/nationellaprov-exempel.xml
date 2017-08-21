@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <provresultat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-                 xmlns="http://pingpong.se/schemas/nationellaprov/v1.2"
+                 xmlns="http://pingpong.se/schemas/nationellaprov/v2.0b"
 		 from="2016-09-01T00:00:00"
 		 tom="2015-09-02T20:00:00">
 
@@ -148,10 +148,7 @@
 	</kursresultat>
 
 	<kursresultat elev="{0c23677c-8ddc-11e5-8994-feff819cdc9f}" kurs="SFIKUB9" skolform="SFI">
-		<provtillfälle uppdaterat="2016-09-01">
-			<sammanvägtprovbetyg>A</sammanvägtprovbetyg>
-		</provtillfälle>
-		<provtillfälle uppdaterat="2016-09-02">
+		<provtillfälle genomfört="2016-09-01" uppdaterat="2016-09-02">
 			<sammanvägtprovbetyg>C</sammanvägtprovbetyg>
 			<delprovsresultat>
 				<betyg>C</betyg>
