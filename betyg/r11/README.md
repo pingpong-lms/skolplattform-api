@@ -46,7 +46,7 @@ API för att erhålla betyg ändrade under ett tidsintervall
 ---------------------
 För att erhålla information om alla elever vars betyg som ändrats under ett visst tidsintervall görs ett HTTP GET-anrop till följande endpoint:
 
-	/api/skolplattform/betyg?from${FROM}&tom${TOM}
+	/api/skolplattform/betyg?from=${FROM}&tom=${TOM}
 
 Format på `from` och `tom`-parametrarna, som beskriver tidsintervallet för ändringar är, `yyyy-MM-ddTHH:mm`. 
 
