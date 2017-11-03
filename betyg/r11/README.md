@@ -34,8 +34,8 @@ Varje betygsuppgift innehåller följande information:
 - Skolform som kursen/ämnet har lästs inom.
 - En flagga som berättar ifall betygsuppgiften är ett betyg eller ett betygsliknande omdöme.
 
-XSD samt exempelfi
----------------------
+XSD samt exempelfil
+-------------------
 Bifogat till detta dokument finns det XSD-schema som definierar informationen:
 - [betyg.xsd](betyg.xsd)
 
