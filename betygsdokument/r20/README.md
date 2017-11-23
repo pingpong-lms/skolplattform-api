@@ -8,7 +8,7 @@ Vid utfärdande av betygsdokument skickas följande information ut:
 
 - Identifierare för den elev dokumentet har utfärdats för.
 - Skolenhetskod för skolenheten där dokumentet utfärdats.
-- GUID for den skola som utfärdar dokumentet.
+- GUID för den skola som utfärdar dokumentet.
 - Datum för utfärdande av dokumentet.
 - Typ av utgångsdokument (se dokumentation i XSD schemat).
 - Ifall examensbevis - yrkesexamen: Om grundläggande behörighet har uppnåtts.
