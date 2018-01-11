@@ -50,12 +50,14 @@
 
 		<xs:attribute name="skolform" use="required">
 			<xs:simpleType><xs:restriction base="xs:string">
-				<xs:enumeration value="FSKK" />
-				<xs:enumeration value="GR" />
-				<xs:enumeration value="GRSAR" />
-				<xs:enumeration value="GY" />
-				<xs:enumeration value="GYSAR" />
-				<xs:enumeration value="VUX" />
+				<xs:enumeration value="FH" />    <!-- Fritidshem -->
+				<xs:enumeration value="FSK" />   <!-- Förskola -->
+				<xs:enumeration value="FSKK" />  <!-- Förskoleklass -->
+				<xs:enumeration value="GR" />    <!-- Grundskola -->
+				<xs:enumeration value="GRSAR" /> <!-- Grundsärskola -->
+				<xs:enumeration value="GY" />    <!-- Gymnasieskola -->
+				<xs:enumeration value="GYSAR" /> <!-- Gymnasiesärskola -->
+				<xs:enumeration value="VUX" />   <!-- Kommunal vuxenutbildning -->
 			</xs:restriction> </xs:simpleType>
 		</xs:attribute>
 
