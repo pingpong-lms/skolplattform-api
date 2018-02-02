@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema targetNamespace="http://pingpong.se/schemas/steering-documents/v1.1"
-           xmlns="http://pingpong.se/schemas/steering-documents/v1.1"
+<xs:schema targetNamespace="http://pingpong.se/schemas/steering-documents/v3.0c"
+           xmlns="http://pingpong.se/schemas/steering-documents/v3.0c"
 	   xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	   elementFormDefault="qualified">
 	<xs:annotation>
@@ -57,6 +57,8 @@
 				<xs:enumeration value="GRSAR" /> <!-- Grundsärskola -->
 				<xs:enumeration value="GY" />    <!-- Gymnasieskola -->
 				<xs:enumeration value="GYSAR" /> <!-- Gymnasiesärskola -->
+				<xs:enumeration value="SARVUX" /><!-- Särskild utbildning för vuxna -->
+				<xs:enumeration value="SFI" />   <!-- Svenska för invandrare -->
 				<xs:enumeration value="VUX" />   <!-- Kommunal vuxenutbildning -->
 			</xs:restriction> </xs:simpleType>
 		</xs:attribute>

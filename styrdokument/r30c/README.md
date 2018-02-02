@@ -7,8 +7,6 @@ Med _styrdokument_ avses här följande dokument:
 - Åtgärdsprogram.
 - Egna dokumenttyper.
 
-Aktuella skolformer är Fritidshem, Förskola, Förskoleklass, Grundskola, Grundsärskola, Gymnasieskola, Gymnasiesärskola samt Kommunal vuxenutbildning.
-
 Via detta API kan information om vilka elever som har vilka styrdokument erhållas.
 
 Information om styrdokument
@@ -62,4 +60,6 @@ Nedan följer en beskrivning av de ändringar som gjorts till olika versioner av
     - Borttag av typen `samtalsunderlag`.
     - Tillägg av typerna `dokumentationavutvecklingssamtal` och `egenskapad`.
     - Tillägg av attributet `id` på dokument.
+    - Tillägg av skolformerna `SARVUX` och `SFI`.
     - Ändring av länk till dokument att använda id.
+    - Ändring av namespace.
