@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provresultat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                 xmlns="http://pingpong.se/schemas/nationellaprov/v4.0a"
+		 from="2017-07-01T00:00:00"
+		 tom="2018-06-30T20:00:00">
+
+	<ämnesresultat elev="{df324j43-3j13-to03-dfu8-fb0429mu39g8}" ämne="MA" årskurs="3" skolform="GR">
+		<provtillfälle uppdaterat="2018-05-01">
+			<delprovsresultat>
+				<måluppfyllnad>true</måluppfyllnad>
+				<typ>A</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<poäng>14</poäng>
+				<måluppfyllnad>true</måluppfyllnad>
+				<typ>B</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<poäng>10</poäng>
+				<måluppfyllnad>true</måluppfyllnad>
+				<typ>C</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<poäng>10</poäng>
+				<måluppfyllnad>true</måluppfyllnad>
+				<typ>D</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<intedeltagit/>
+				<typ>E</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<borttappat/>
+				<typ>F1</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<borttappat/>
+				<typ>F2</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<poäng>1</poäng>
+				<måluppfyllnad>false</måluppfyllnad>
+				<typ>G1</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<poäng>9</poäng>
+				<måluppfyllnad>true</måluppfyllnad>
+				<typ>G2</typ>
+			</delprovsresultat>
+		</provtillfälle>
+	</ämnesresultat>
+
+	<ämnesresultat elev="{df324j43-3j13-to04-dfu8-fb0429mu39g8}" ämne="SV" årskurs="6" skolform="GR">
+		<provtillfälle uppdaterat="2018-05-01">
+			<sammanvägtprovbetyg>B</sammanvägtprovbetyg>
+			<delprovsresultat>
+				<betyg>A</betyg>
+				<typ>A</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>B</betyg>
+				<typ>B</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>C</betyg>
+				<typ>C</typ>
+			</delprovsresultat>
+		</provtillfälle>
+	</ämnesresultat>
+
+	<ämnesresultat elev="{df324j43-3j13-to05-dfu8-fb0429mu39g8}" ämne="SV" årskurs="6" skolform="GR">
+		<provtillfälle uppdaterat="2018-05-01">
+			<sammanvägtprovbetyg>B</sammanvägtprovbetyg>
+			<delprovsresultat>
+				<betyg>A</betyg>
+				<typ>A</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>B</betyg>
+				<typ>B</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<borttappat/>
+				<typ>C</typ>
+			</delprovsresultat>
+		</provtillfälle>
+		<provtillfälle uppdaterat="2018-05-01">
+			<sammanvägtprovbetyg>A</sammanvägtprovbetyg>
+			<delprovsresultat>
+				<betyg>A</betyg>
+				<typ>A</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>A</betyg>
+				<typ>B</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>A</betyg>
+				<typ>C</typ>
+			</delprovsresultat>
+		</provtillfälle>
+	</ämnesresultat>
+
+	<kursresultat elev="{0c23677c-8ddc-12e5-8994-feff819cdc9f}" kurs="MATMAT01c" skolform="GY">
+		<provtillfälle uppdaterat="2018-05-01">
+			<sammanvägtprovbetyg>F</sammanvägtprovbetyg>
+		</provtillfälle>
+	</kursresultat>
+
+	<kursresultat elev="{0c23677c-8ddc-12e5-8994-feff819cdc9f}" kurs="MATMAT01b" skolform="GY">
+		<provtillfälle uppdaterat="2018-05-01">
+			<intedeltagit/>
+		</provtillfälle>
+	</kursresultat>
+
+	<kursresultat elev="{0c23677c-8ddc-12e5-8994-feff819cdc9f}" kurs="SVASVA01" skolform="GY">
+		<provtillfälle uppdaterat="2018-05-01">
+			<sammanvägtprovbetyg>A</sammanvägtprovbetyg>
+			<delprovsresultat>
+				<betyg>A</betyg>
+				<typ>LÄSA</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>A</betyg>
+				<typ>TALA</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>B</betyg>
+				<typ>SKRIVA</typ>
+			</delprovsresultat>
+		</provtillfälle>
+	</kursresultat>
+
+	<kursresultat elev="{0c23677c-8ddc-11e5-8994-feff819cdc9f}" kurs="MATMAT01a" skolform="GY">
+		<provtillfälle uppdaterat="2018-05-01">
+			<sammanvägtprovbetyg>A</sammanvägtprovbetyg>
+		</provtillfälle>
+	</kursresultat>
+
+	<kursresultat elev="{0c23677c-8ddc-11e5-8994-feff819cdc9f}" kurs="SVESVE01" skolform="GY">
+		<provtillfälle uppdaterat="2018-05-01">
+			<sammanvägtprovbetyg>A</sammanvägtprovbetyg>
+			<delprovsresultat>
+				<betyg>B</betyg>
+				<typ>LÄSA</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>B</betyg>
+				<typ>TALA</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>B</betyg>
+				<typ>SKRIVA</typ>
+			</delprovsresultat>
+		</provtillfälle>
+	</kursresultat>
+
+	<kursresultat elev="{0c23677c-8ddc-11e5-8994-feff819cdc9f}" kurs="SFIKUB9" skolform="SFI">
+		<provtillfälle genomfört="2018-04-01" uppdaterat="2018-05-01">
+			<sammanvägtprovbetyg>C</sammanvägtprovbetyg>
+			<delprovsresultat>
+				<betyg>C</betyg>
+				<typ>LÄSA</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>B</betyg>
+				<typ>TALA</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>E</betyg>
+				<typ>SKRIVA</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<betyg>A</betyg>
+				<typ>LYSSNA</typ>
+			</delprovsresultat>
+		</provtillfälle>
+	</kursresultat>
+
+</provresultat>
