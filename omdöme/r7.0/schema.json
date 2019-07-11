@@ -1,0 +1,109 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {},
+    "title": "Schema för svar från Elevdokumentation Assessment API",
+    "type": "object",
+    "properties": {
+        "assessments": {
+            "type": "array",
+            "items": {
+                "properties": {
+                    "assessmentId": {
+                        "description": "Identifierare för omdömet",
+                        "examples": [
+                            "MA:79f06b20-fee7-4ec0-8023-aac622ad3046"
+                        ],
+                        "type": "string"
+                    },
+                    "coursePlan": {
+                        "description": "Den kursplan utifrån vilken eleven har bedömts",
+                        "examples": [
+                            "GR"
+                        ],
+                        "enum": ["GR", "GRSAR"],
+                        "type": "string"
+                    },
+                    "doneDate": {
+                        "description": "Det tillfälle som omdömet markerades som klart",
+                        "examples": [
+                            "2019-07-11T16:05:04.324"
+                        ],
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "level": {
+                        "description": "Omdömesnivå",
+                        "examples": [
+                            "2"
+                        ],
+                        "enum": ["-1", "0", "1", "2"],
+                        "type": "string"
+                    },
+                    "modifiedDate": {
+                        "description": "Det tillfälle som omdömet senast ändrats",
+                        "examples": [
+                            "2019-07-11T16:05:04.324"
+                        ],
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "publishedDate": {
+                        "description": "Det tillfälle som omdömet synliggjordes för eleven",
+                        "examples": [
+                            "2019-07-11T16:05:04.324"
+                        ],
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "schoolId": {
+                        "description": "Identifierare för skolan som omdömet upprättades inom",
+                        "examples": [
+                            "fd27cb98-47e5-4bba-a421-674fa4f51633"
+                        ],
+                        "format": "uuid",
+                        "type": "string"
+                    },
+                    "studentId": {
+                        "description": "Identifierare för eleven som omdömet är för",
+                        "examples": [
+                            "605d9ca8-1863-49c7-95df-3341bd4ed219"
+                        ],
+                        "format": "uuid",
+                        "type": "string"
+                    },
+                    "subjectCode": {
+                        "description": "Identifierare för det ämne som omdömet avser",
+                        "examples": [
+                            "MA"
+                        ],
+                        "type": "string"
+                    },
+                    "teacherId": {
+                        "description": "Identifierare för läraren eller administratören som satte omdömet",
+                        "examples": [
+                            "e28ed5d4-0729-4c2d-aed9-b310c54f2c25"
+                        ],
+                        "format": "uuid",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "assessmentId",
+                    "coursePlan",
+                    "doneDate",
+                    "level",
+                    "modifiedDate",
+                    "publishedDate",
+                    "schoolId",
+                    "studentId",
+                    "subjectCode",
+                    "teacherId"
+                ],
+                "type": "object"
+            }
+        }
+    },
+    "required": [
+        "assessments"
+    ]
+}

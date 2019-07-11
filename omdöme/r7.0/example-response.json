@@ -1,0 +1,76 @@
+{
+    "assessments": [
+        {
+            "assessmentId": "NO:79f06b20-fee7-4ec0-8023-aac622ad3046",
+            "coursePlan": "GR",
+            "doneDate": "2019-07-10T14:04:04.123",
+            "level": "2",
+            "modifiedDate": "2019-07-11T16:05:04.280",
+            "publishedDate": "2019-07-11T16:05:04.280",
+            "schoolId": "fd27cb98-47e5-4bba-a421-674fa4f51633",
+            "studentId": "605d9ca8-1863-49c7-95df-3341bd4ed219",
+            "subjectCode": "NO",
+            "teacherId": "69769ddf-59af-42db-86dc-7d43fb078234"
+        },
+        {
+            "assessmentId": "MU:79f06b20-fee7-4ec0-8023-aac622ad3046",
+            "coursePlan": "GR",
+            "doneDate": "2019-07-10T14:04:04.123",
+            "level": "1",
+            "modifiedDate": "2019-07-11T16:05:04.329",
+            "publishedDate": "2019-07-11T16:05:04.329",
+            "schoolId": "fd27cb98-47e5-4bba-a421-674fa4f51633",
+            "studentId": "605d9ca8-1863-49c7-95df-3341bd4ed219",
+            "subjectCode": "MU",
+            "teacherId": "69769ddf-59af-42db-86dc-7d43fb078234"
+        },
+        {
+            "assessmentId": "SV:79f06b20-fee7-4ec0-8023-aac622ad3046",
+            "coursePlan": "GR",
+            "doneDate": "2019-07-10T14:04:04.123",
+            "level": "2",
+            "modifiedDate": "2019-07-11T16:05:04.338",
+            "publishedDate": "2019-07-11T16:05:04.338",
+            "schoolId": "fd27cb98-47e5-4bba-a421-674fa4f51633",
+            "studentId": "605d9ca8-1863-49c7-95df-3341bd4ed219",
+            "subjectCode": "SV",
+            "teacherId": "69769ddf-59af-42db-86dc-7d43fb078234"
+        },
+        {
+            "assessmentId": "SO:79f06b20-fee7-4ec0-8023-aac622ad3046",
+            "coursePlan": "GR",
+            "doneDate": "2019-07-10T14:04:04.123",
+            "level": "2",
+            "modifiedDate": "2019-07-11T16:05:04.335",
+            "publishedDate": "2019-07-11T16:05:04.335",
+            "schoolId": "fd27cb98-47e5-4bba-a421-674fa4f51633",
+            "studentId": "605d9ca8-1863-49c7-95df-3341bd4ed219",
+            "subjectCode": "SO",
+            "teacherId": "69769ddf-59af-42db-86dc-7d43fb078234"
+        },
+        {
+            "assessmentId": "IDH:79f06b20-fee7-4ec0-8023-aac622ad3046",
+            "coursePlan": "GR",
+            "doneDate": "2019-07-10T14:04:04.123",
+            "level": "0",
+            "modifiedDate": "2019-07-11T16:05:04.332",
+            "publishedDate": "2019-07-11T16:05:04.332",
+            "schoolId": "fd27cb98-47e5-4bba-a421-674fa4f51633",
+            "studentId": "605d9ca8-1863-49c7-95df-3341bd4ed219",
+            "subjectCode": "IDH",
+            "teacherId": "69769ddf-59af-42db-86dc-7d43fb078234"
+        },
+        {
+            "assessmentId": "MA:79f06b20-fee7-4ec0-8023-aac622ad3046",
+            "coursePlan": "GR",
+            "doneDate": "2019-07-10T14:04:04.123",
+            "level": "2",
+            "modifiedDate": "2019-07-11T16:05:04.324",
+            "publishedDate": "2019-07-11T16:05:04.324",
+            "schoolId": "fd27cb98-47e5-4bba-a421-674fa4f51633",
+            "studentId": "605d9ca8-1863-49c7-95df-3341bd4ed219",
+            "subjectCode": "MA",
+            "teacherId": "69769ddf-59af-42db-86dc-7d43fb078234"
+        }
+    ]
+}
