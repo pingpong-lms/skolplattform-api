@@ -34,15 +34,15 @@ API för att erhålla uppdaterade styrdokument under ett tidsintervall
 --------------------------------------------------------------------
 För att erhålla information om omdömen som publicerats eller ändrats inom ett visst tidsintervall görs ett HTTP GET-anrop till följande endpoint från `localhost`:
 
-    localhost:7026/api/assessments?from=${FROM}&tom=${TOM}
+    localhost:7026/api/assessments?from=${FROM}&to=${TO}
 
 För att erhålla information om omdömen som publicerats eller ändrats inom ett visst tidsintervall tillhörande en specifik elev görs ett HTTP GET-anrop till följande endpoint från localhost:
 
-    localhost:7026/api/assessments?from=${FROM}&to=${TOM}&studentId=${STUDENTID}
+    localhost:7026/api/assessments?from=${FROM}&to=${TO}&studentId=${STUDENTID}
 
 För att erhålla information om omdömen som publicerats eller ändrats inom ett visst tidsintervall tillhörande en specifik skola görs ett HTTP GET-anrop till följande endpoint från localhost:
 
-    localhost:7026/api/assessments?from=${FROM}&to=${TOM}&schoolId=${SCHOOLID}
+    localhost:7026/api/assessments?from=${FROM}&to=${TO}&schoolId=${SCHOOLID}
 
 Formatet på `from` och `to`-parametrarna, som beskriver tidsintervallet för ändringar, är `yyyy-MM-ddTHH:mm`. Exempel: `2015-02-04T12:30`.
 
