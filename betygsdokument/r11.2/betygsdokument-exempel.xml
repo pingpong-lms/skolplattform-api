@@ -1,0 +1,53 @@
+<!DOCTYPE xml>
+<betygsdokument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                 xmlns="http://pingpong.se/schemas/betygsdokument/v11.2"
+		 from="2014-12-17T09:00:00"
+		 tom="2014-12-19T09:00:00">
+
+	<!-- Examensbevis utfärdat inom skolenheten Östra gymnasiet (skolenhetskod=99592025) -->
+	<dokument>
+		<elev>{78d4c490-708e-11e4-9803-0800200c9a66}</elev>
+		<studievägskod>NATNAT</studievägskod>
+		<utfärdat>2014-12-19</utfärdat>
+		<skola>{d0566f23-20d0-4bc1-9865-c8844cf00944}</skola>
+		<skolenhetskod>99592025</skolenhetskod>
+		<typ>GY_EXAMENSBEVIS_HOGSKOLEFORBEREDANDE</typ>
+		<kurser>
+			<kurs>GYARES</kurs>
+			<kurs>MODFRE01</kurs>
+		</kurser>
+	</dokument>
+
+
+	<!-- Makulerat dokument -->
+	<dokument>
+		<elev>{78d4c490-708e-11e4-9803-0800200c9a66}</elev>
+		<studievägskod>NATNAT</studievägskod>
+		<utfärdat>2014-12-18</utfärdat>
+		<makulerat>2014-12-19</makulerat>
+		<skola>{d0566f23-20d0-4bc1-9865-c8844cf00944}</skola>
+		<skolenhetskod>99592025</skolenhetskod>
+		<typ>GY_EXAMENSBEVIS_YRKESFORBEREDANDE</typ>
+		<grundläggandebehörighet>true</grundläggandebehörighet>
+		<kurser>
+			<kurs>GYARES</kurs>
+		</kurser>
+	</dokument>
+
+	<!-- Yrkesförberedande examensbevis med grundläggande behörighet utfärdat inom skolenheten Östra gymnasiet (skolenhetskod=99592025) -->
+	<dokument>
+		<elev>{78d4c490-708e-11e4-9803-0800200c9a66}</elev>
+		<studievägskod>NATNAT</studievägskod>
+		<utfärdat>2014-12-19</utfärdat>
+		<skola>{d0566f23-20d0-4bc1-9865-c8844cf00944}</skola>
+		<skolenhetskod>99592025</skolenhetskod>
+		<typ>GY_EXAMENSBEVIS_YRKESFORBEREDANDE</typ>
+		<grundläggandebehörighet>true</grundläggandebehörighet>
+		<kurser>
+			<kurs>GYARES</kurs>
+			<kurs>MODFRE01</kurs>
+		</kurser>
+	</dokument>
+
+</betygsdokument>
