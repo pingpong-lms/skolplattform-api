@@ -141,6 +141,7 @@
 						<xs:enumeration value="G1"/>
 						<xs:enumeration value="G2"/>
 						<xs:enumeration value="H"/>
+						<xs:enumeration value="PROVRESULTAT"/>
 					</xs:restriction></xs:simpleType>
 				</xs:element>
 			</xs:sequence>
