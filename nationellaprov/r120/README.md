@@ -48,6 +48,7 @@ HTTP-statuskoden vid korrekt användning är `200 OK` där response body är ett
 
 Ändringshistorik
 ----------------
+- 2024-01-30: Ny typ för r12.0: Utökade enumerering av delprovs typer för nationellaprov `<typ>`.
 - 2022-02-16: Ny version r12.0: utökade enumerering av delprovs betyg och samlat betyg `<typ>`.
 - 2018-11-15: Ny version r4.0a: utökade enumerering av delprovs `<typ>`.
 - 2017-08-21: Lade till attributet genomfört på `<provtillfälle>`.

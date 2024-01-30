@@ -103,8 +103,12 @@
 	</ämnesresultat>
 
 	<kursresultat elev="{0c23677c-8ddc-12e5-8994-feff819cdc9f}" kurs="MATMAT01c" skolform="GY">
-		<provtillfälle uppdaterat="2018-05-01">
+		<provtillfälle uppdaterat="2023-05-01">
 			<sammanvägtprovbetyg>F</sammanvägtprovbetyg>
+			<delprovsresultat>
+				<poäng>74</poäng>
+				<typ>PROVRESULTAT</typ>
+			</delprovsresultat>
 		</provtillfälle>
 	</kursresultat>
 
@@ -135,6 +139,11 @@
 	<kursresultat elev="{0c23677c-8ddc-11e5-8994-feff819cdc9f}" kurs="MATMAT01a" skolform="GY">
 		<provtillfälle uppdaterat="2018-05-01">
 			<sammanvägtprovbetyg>A</sammanvägtprovbetyg>
+			<delprovsresultat>
+				<poäng>72</poäng>
+				<måluppfyllnad>false</måluppfyllnad>
+				<typ>PROVRESULTAT</typ>
+			</delprovsresultat>
 		</provtillfälle>
 	</kursresultat>
 
@@ -151,6 +160,24 @@
 			</delprovsresultat>
 			<delprovsresultat>
 				<betyg>B</betyg>
+				<typ>SKRIVA</typ>
+			</delprovsresultat>
+		</provtillfälle>
+	</kursresultat>
+
+	<kursresultat elev="{0c919226-AKFE-42ee-B8C0-A24D19F32C02}" kurs="ENGENG05" skolform="GY">
+		<provtillfälle uppdaterat="2023-12-22">
+			<sammanvägtprovbetyg>D</sammanvägtprovbetyg>
+			<delprovsresultat>
+				<poäng>4</poäng>
+				<typ>TALA</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<poäng>6</poäng>
+				<typ>LÄSA</typ>
+			</delprovsresultat>
+			<delprovsresultat>
+				<poäng>8</poäng>
 				<typ>SKRIVA</typ>
 			</delprovsresultat>
 		</provtillfälle>
