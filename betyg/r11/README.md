@@ -1,4 +1,4 @@
-Betyg API, version 1.1
+Betyg API, version 1.1.1
 ======================
 API:et skickar ut betygsrelaterad information vid ändrade betygsuppgifter.
 
@@ -46,9 +46,14 @@ API för att erhålla betyg ändrade under ett tidsintervall
 ---------------------
 För att erhålla information om alla elever vars betyg som ändrats under ett visst tidsintervall görs ett HTTP GET-anrop till följande endpoint:
 
-	/api/skolplattform/betyg?from=${FROM}&tom=${TOM}
+	/api/skolplattform/betyg?from=${FROM}&tom=${TOM}[&schoolType=${Skolform}]
 
-Format på `from` och `tom`-parametrarna, som beskriver tidsintervallet för ändringar är, `yyyy-MM-ddTHH:mm`. 
+Format på `from` och `tom`-parametrarna, som beskriver tidsintervallet för ändringar är, `yyyy-MM-ddTHH:mm`.
+
+Skolform är en valbar parameter. Antingen utelämnas den, och då har API:et samma beteende som i version 1.1,
+där samtliga skolformer levereras, eller så sätts `schoolType` till ett av värdena `PO`, `FSK`, `FH`, `FSKK`, `GR`,
+`GRSAR`, `SPEC`, `SAMESKOLA`, `GY`, `GYSAR`, `GYSAR2002`, `VUX`, `SARVUX`, `SFI` eller `YH` för att filtera ut just
+den önskade skolformen.
 
 HTTP-statuskoden vid korrekt användning är `200 OK` där response body är ett XML-dokument enligt [betyg.xsd](betyg.xsd).
 
